@@ -1,8 +1,10 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
+import fontStyles from "./styles/fonts.css";
 import globalStyles from "./styles/global.css";
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: fontStyles },
   { rel: "stylesheet", href: globalStyles },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },

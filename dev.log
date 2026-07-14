@@ -1,0 +1,46 @@
+
+> ozan-varol-clone@1.0.0 dev
+> remix dev
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+ 💿  remix dev
+
+[7m[33m warn [39m[27m Fetcher persistence behavior is changing in React Router v7
+[33m┃[39m [90mYou can use the `v3_fetcherPersist` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_fetcherPersist[39m
+[33m┗[39m
+[7m[33m warn [39m[27m Route discovery/manifest behavior is changing in React Router v7
+[33m┃[39m [90mYou can use the `v3_lazyRouteDiscovery` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_lazyRouteDiscovery[39m
+[33m┗[39m
+[7m[33m warn [39m[27m Relative routing behavior for splat routes is changing in React Router v7
+[33m┃[39m [90mYou can use the `v3_relativeSplatPath` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_relativeSplatPath[39m
+[33m┗[39m
+[7m[33m warn [39m[27m Data fetching is changing to a single fetch in React Router v7
+[33m┃[39m [90mYou can use the `v3_singleFetch` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_singleFetch[39m
+[33m┗[39m
+[7m[33m warn [39m[27m The format of errors thrown on aborted requests is changing in React Router v7
+[33m┃[39m [90mYou can use the `v3_throwAbortReason` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_throwAbortReason[39m
+[33m┗[39m
+[7m[34m info [39m[27m building...
+[7m[34m info [39m[27m built[90m (1.6s)[39m
+[remix-serve] http://localhost:3000 (http://192.168.15.1:3000)
+
+GET / 200 - - 32.468 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\root.tsx)[39m
+[7m[34m info [39m[27m rebuilt[90m (966ms)[39m
+[7m[34m info [39m[27m app server ready[90m (735ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.15.1:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\root.tsx)[39m
+[7m[34m info [39m[27m rebuilt[90m (553ms)[39m
+[7m[34m info [39m[27m app server ready[90m (716ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.15.1:3000)
+^C^C

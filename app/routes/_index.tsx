@@ -17,16 +17,15 @@ export default function Index() {
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">
-              <span className="hero-title-1">OZAN</span>
-              <span className="hero-title-2">VAROL</span>
+              <span className="ozan">OZAN</span>
+              <span className="varol">VAROL</span>
             </h1>
-            <h2 className="hero-subtitle">The One Newsletter You'll Actually Love</h2>
-            <p className="hero-description">
-              <strong>Join 50K+ readers who call it "the email highlight of my week."</strong>
-            </p>
-            <p className="hero-tagline">Takes 3 minutes to read. Takes longer to shake.</p>
-            <div className="hero-cta">
-              <a href="/newsletter" className="btn-primary">COUNT ME IN! &rarr;</a>
+            <h2 className="hero-sub">The One Newsletter You'll <span className="actually">Actually</span> Love</h2>
+            <p className="hero-join"><b>Join 50K+ readers who call it "the email highlight of my week."</b></p>
+            <p className="hero-tag">Takes 3 minutes to read. Takes longer to shake.</p>
+            <div className="hero-divider"></div>
+            <div className="hero-form">
+              <script async data-uid="9ae9a39668" src="https://outatime-llc.ck.page/9ae9a39668/index.js"></script>
             </div>
           </div>
           <div className="hero-image">

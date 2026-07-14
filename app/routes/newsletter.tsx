@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import PageHeader from "../components/PageHeader";
+import CtaSection from "../components/CtaSection";
 
 export const meta: MetaFunction = () => [
   { title: "Newsletter | Ozan Varol - The One Newsletter You'll Actually Love" },
@@ -8,12 +10,10 @@ export const meta: MetaFunction = () => [
 export default function Newsletter() {
   return (
     <>
-      <section className="page-header">
-        <div className="container">
-          <h1 className="page-title">The Weekly Spark</h1>
-          <p className="page-subtitle">The one newsletter you'll actually love</p>
-        </div>
-      </section>
+      <PageHeader
+        title="The Weekly Spark"
+        subtitle="The one newsletter you'll actually love"
+      />
 
       <section className="newsletter-hero">
         <div className="container">
@@ -57,16 +57,13 @@ export default function Newsletter() {
         </div>
       </section>
 
-      <section className="cta-section">
-        <div className="container">
-          <h2 className="cta-title">Ready to Spark Your Thinking?</h2>
-          <p className="cta-text">Join 50K+ readers who get my latest insights delivered straight to their inbox every week.</p>
-          <form className="newsletter-form-cta" id="newsletterFormBottom">
-            <input type="email" placeholder="Enter your email address" required className="newsletter-input" />
-            <button type="submit" className="btn-primary btn-large">Subscribe Now &rarr;</button>
-          </form>
-        </div>
-      </section>
+      <CtaSection
+        title="Ready to Spark Your Thinking?"
+        text="Join 50K+ readers who get my latest insights delivered straight to their inbox every week."
+        buttons={[
+          { label: "Subscribe Now", href: "#newsletterSubscribeForm", variant: "primary" },
+        ]}
+      />
     </>
   );
 }

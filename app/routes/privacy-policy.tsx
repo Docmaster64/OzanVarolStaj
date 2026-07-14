@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import PageHeader from "../components/PageHeader";
 
 export const meta: MetaFunction = () => [
   { title: "Privacy Policy | Ozan Varol" },
@@ -8,12 +9,10 @@ export const meta: MetaFunction = () => [
 export default function PrivacyPolicy() {
   return (
     <>
-      <section className="page-header">
-        <div className="container">
-          <h1 className="page-title">Privacy Policy</h1>
-          <p className="page-subtitle">Last updated: January 2025</p>
-        </div>
-      </section>
+      <PageHeader
+        title="Privacy Policy"
+        subtitle="Last updated: January 2025"
+      />
 
       <section className="privacy-section">
         <div className="container">

@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import PageHeader from "../components/PageHeader";
+import CtaSection from "../components/CtaSection";
 
 export const meta: MetaFunction = () => [
   { title: "Contact | Ozan Varol - Get in Touch" },
@@ -8,12 +10,10 @@ export const meta: MetaFunction = () => [
 export default function Contact() {
   return (
     <>
-      <section className="page-header">
-        <div className="container">
-          <h1 className="page-title">Get in Touch</h1>
-          <p className="page-subtitle">I'd love to hear from you. Let's start a conversation.</p>
-        </div>
-      </section>
+      <PageHeader
+        title="Get in Touch"
+        subtitle="I'd love to hear from you. Let's start a conversation."
+      />
 
       <section className="contact-section">
         <div className="container">
@@ -105,16 +105,14 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="cta-section">
-        <div className="container">
-          <h2 className="cta-title">Let's Start a Conversation</h2>
-          <p className="cta-text">Whether you have a question, an idea, or just want to say hello, I'd love to hear from you.</p>
-          <div className="cta-buttons">
-            <a href="mailto:hello@ozanvarol.com" className="btn-primary btn-large">Send an Email &rarr;</a>
-            <a href="/newsletter" className="btn-secondary btn-large">Join Newsletter</a>
-          </div>
-        </div>
-      </section>
+      <CtaSection
+        title="Let's Start a Conversation"
+        text="Whether you have a question, an idea, or just want to say hello, I'd love to hear from you."
+        buttons={[
+          { label: "Send an Email", href: "mailto:hello@ozanvarol.com", variant: "primary" },
+          { label: "Join Newsletter", href: "/newsletter", variant: "secondary" },
+        ]}
+      />
     </>
   );
 }

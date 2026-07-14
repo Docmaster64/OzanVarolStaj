@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import PageHeader from "../components/PageHeader";
 
 export const meta: MetaFunction = () => [
   { title: "Affiliate Disclosure | Ozan Varol" },
@@ -8,12 +9,10 @@ export const meta: MetaFunction = () => [
 export default function AffiliateDisclosure() {
   return (
     <>
-      <section className="page-header">
-        <div className="container">
-          <h1 className="page-title">Affiliate Disclosure</h1>
-          <p className="page-subtitle">Transparency in partnerships and recommendations</p>
-        </div>
-      </section>
+      <PageHeader
+        title="Affiliate Disclosure"
+        subtitle="Transparency in partnerships and recommendations"
+      />
 
       <section className="disclosure-section">
         <div className="container">

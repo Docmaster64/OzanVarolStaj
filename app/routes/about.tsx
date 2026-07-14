@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import PageHeader from "../components/PageHeader";
+import CtaSection from "../components/CtaSection";
 
 export const meta: MetaFunction = () => [
   { title: "About | Ozan Varol - Rocket Scientist Turned Bestselling Author" },
@@ -8,12 +10,10 @@ export const meta: MetaFunction = () => [
 export default function About() {
   return (
     <>
-      <section className="page-header">
-        <div className="container">
-          <h1 className="page-title">About Ozan Varol</h1>
-          <p className="page-subtitle">Rocket scientist turned bestselling author and keynote speaker</p>
-        </div>
-      </section>
+      <PageHeader
+        title="About Ozan Varol"
+        subtitle="Rocket scientist turned bestselling author and keynote speaker"
+      />
 
       <section className="about-hero">
         <div className="container">
@@ -127,16 +127,14 @@ export default function About() {
         </div>
       </section>
 
-      <section className="cta-section">
-        <div className="container">
-          <h2 className="cta-title">Let's Connect</h2>
-          <p className="cta-text">I'd love to hear from you. Whether you're interested in booking me for a speaking engagement, have a question about my books, or just want to say hello.</p>
-          <div className="cta-buttons">
-            <a href="/contact" className="btn-primary btn-large">Get in Touch &rarr;</a>
-            <a href="/speaking" className="btn-secondary btn-large">Book for Speaking &rarr;</a>
-          </div>
-        </div>
-      </section>
+      <CtaSection
+        title="Let's Connect"
+        text="I'd love to hear from you. Whether you're interested in booking me for a speaking engagement, have a question about my books, or just want to say hello."
+        buttons={[
+          { label: "Get in Touch", href: "/contact", variant: "primary" },
+          { label: "Book for Speaking", href: "/speaking", variant: "secondary" },
+        ]}
+      />
     </>
   );
 }

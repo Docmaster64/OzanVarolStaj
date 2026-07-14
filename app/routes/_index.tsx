@@ -1,6 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 
 export const meta: MetaFunction = () => [
   { title: "Home | #1 Bestselling Author, Keynote Speaker & Expert on Innovation & Creativity" },
@@ -10,8 +8,6 @@ export const meta: MetaFunction = () => [
 export default function Index() {
   return (
     <>
-      <Navigation />
-
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-container">
@@ -269,8 +265,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

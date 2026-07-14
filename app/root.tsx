@@ -2,6 +2,8 @@ import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import fontStyles from "./styles/fonts.css";
 import globalStyles from "./styles/global.css";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: fontStyles },
@@ -27,7 +29,9 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Navigation />
         <Outlet />
+        <Footer />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

@@ -1,6 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 
 export const meta: MetaFunction = () => [
   { title: "Newsletter | Ozan Varol - The One Newsletter You'll Actually Love" },
@@ -10,8 +8,6 @@ export const meta: MetaFunction = () => [
 export default function Newsletter() {
   return (
     <>
-      <Navigation />
-
       <section className="page-header">
         <div className="container">
           <h1 className="page-title">The Weekly Spark</h1>
@@ -71,8 +67,6 @@ export default function Newsletter() {
           </form>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

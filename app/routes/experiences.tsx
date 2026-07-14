@@ -1,6 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 
 export const meta: MetaFunction = () => [
   { title: "The Awakening | Ozan Varol" },
@@ -103,8 +101,6 @@ const faqs = [
 export default function Experiences() {
   return (
     <>
-      <Navigation />
-
       <section className="awakening-hero">
         <div className="container">
           <span className="awakening-eyebrow">not a retreat. a rebirth.</span>
@@ -269,8 +265,6 @@ export default function Experiences() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

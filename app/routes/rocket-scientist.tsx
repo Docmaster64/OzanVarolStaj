@@ -1,6 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 
 export const meta: MetaFunction = () => [
   { title: "Think Like a Rocket Scientist | Ozan Varol" },
@@ -10,8 +8,6 @@ export const meta: MetaFunction = () => [
 export default function RocketScientist() {
   return (
     <>
-      <Navigation />
-
       <section className="page-header">
         <div className="container">
           <h1 className="page-title">Think Like a Rocket Scientist</h1>
@@ -81,8 +77,6 @@ export default function RocketScientist() {
           <div className="cta-buttons"><a href="https://geni.us/TLaRS" target="_blank" className="btn-primary btn-large">Get Your Copy Today &rarr;</a></div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

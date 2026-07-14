@@ -1,6 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 
 export const meta: MetaFunction = () => [
   { title: "Speaking | Ozan Varol - Keynote Speaker" },
@@ -10,8 +8,6 @@ export const meta: MetaFunction = () => [
 export default function Speaking() {
   return (
     <>
-      <Navigation />
-
       <section className="page-header">
         <div className="container">
           <h1 className="page-title">Keynote Speaking</h1>
@@ -168,8 +164,6 @@ export default function Speaking() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

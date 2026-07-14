@@ -1,6 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 
 export const meta: MetaFunction = () => [
   { title: "Affiliate Disclosure | Ozan Varol" },
@@ -10,8 +8,6 @@ export const meta: MetaFunction = () => [
 export default function AffiliateDisclosure() {
   return (
     <>
-      <Navigation />
-
       <section className="page-header">
         <div className="container">
           <h1 className="page-title">Affiliate Disclosure</h1>
@@ -40,8 +36,6 @@ export default function AffiliateDisclosure() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

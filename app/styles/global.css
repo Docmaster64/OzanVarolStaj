@@ -295,23 +295,31 @@ img {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 40px;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
 }
 
 .hero-content {
   color: var(--color-white);
   z-index: 2;
+  align-self: center;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .hero-title {
   font-size: clamp(80px, 14vw, 200px);
   line-height: 0.85;
-  margin-bottom: 10px;
+  margin: 24px 0 0;
 }
 
 .hero-title .ozan { color: var(--color-white); display: block; }
-.hero-title .varol { color: var(--color-yellow); display: block; text-align: right; }
+.hero-title .varol { color: var(--color-yellow); display: block; text-align: left; }
 
 .hero-sub {
   font-family: 'Canela Medium', Georgia, serif;
@@ -755,6 +763,7 @@ img {
   .nav-spark, .nav-masterclass { display: none; }
   .nav-container { justify-content: flex-end; }
   .hero-container, .about-container, .book-container, .blog-container, .audio-container, .about-hero-container, .speaking-hero-container, .book-detail-container, .featured-post-container, .contact-container, .experience-hero-container, .newsletter-hero-container { grid-template-columns: 1fr; }
+  .hero-right { justify-content: flex-start; gap: 24px; }
   .hero-title { font-size: 70px; }
   .page-title { font-size: 42px; }
   .footer-content { grid-template-columns: 1fr; }

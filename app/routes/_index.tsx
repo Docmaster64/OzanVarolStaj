@@ -13,10 +13,6 @@ export default function Index() {
       <section className="hero">
         <div className="hero-container">
           <div className="hero-content">
-            <h1 className="hero-title">
-              <span className="ozan">OZAN</span>
-              <span className="varol">VAROL</span>
-            </h1>
             <h2 className="hero-sub">The One Newsletter You'll <span className="actually">Actually</span> Love</h2>
             <p className="hero-join"><b>Join 50K+ readers who call it "the email highlight of my week."</b></p>
             <p className="hero-tag">Takes 3 minutes to read. Takes longer to shake.</p>
@@ -25,8 +21,14 @@ export default function Index() {
               <script async data-uid="9ae9a39668" src="https://outatime-llc.ck.page/9ae9a39668/index.js"></script>
             </div>
           </div>
-          <div className="hero-image">
-            <img src="https://static.showit.co/800/Ih3XbA-RRRmJ2zw_AOkzXw/260793/untitled_design_1.png" alt="Ozan Varol" />
+          <div className="hero-right">
+            <div className="hero-image">
+              <img src="https://static.showit.co/800/Ih3XbA-RRRmJ2zw_AOkzXw/260793/untitled_design_1.png" alt="Ozan Varol" />
+            </div>
+            <h1 className="hero-title">
+              <span className="ozan">OZAN</span>
+              <span className="varol">VAROL</span>
+            </h1>
           </div>
         </div>
       </section>
@@ -251,7 +253,7 @@ export default function Index() {
             <div className="testimonial-content">
               <h3 className="testimonial-text">If you looked up the word 'polymath' in the dictionary, you may see a picture of Ozan Varol.</h3>
               <p className="testimonial-author">— NIR EYAL</p>
-              <p className="testimonial-title">New York Times-bestselling author of <i>Hooked and Indistractable</i></p>
+              <p className="testimonial-title">Bestselling author of <i>Hooked and Indistractable</i></p>
             </div>
           </div>
         </div>

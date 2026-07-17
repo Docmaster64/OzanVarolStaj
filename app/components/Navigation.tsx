@@ -63,7 +63,6 @@ export default function Navigation() {
           >
             <span></span>
             <span></span>
-            <span></span>
           </button>
         </div>
       </nav>

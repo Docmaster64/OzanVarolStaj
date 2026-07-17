@@ -155,8 +155,10 @@ img {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 28px;
+  flex: 1;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 .nav-spark {
   position: absolute;
@@ -313,11 +315,11 @@ img {
   align-items: center;
   justify-content: center;
   background: none;
-  border: 1px solid rgba(255, 255, 255, .25);
+  border: none;
   border-radius: 8px;
   cursor: pointer;
   padding: 11px 16px;
-  gap: 6px;
+  gap: 10px;
   transition: background .3s ease, border-color .3s ease;
 }
 .nav-toggle:hover {
@@ -325,13 +327,13 @@ img {
 }
 .nav-toggle span {
   display: block;
-  width: 28px;
-  height: 2px;
+  width: 56px;
+  height: 1px;
   background: var(--color-white);
   transition: all .3s ease;
 }
 .navbar.scrolled .nav-toggle {
-  border-color: #00000026;
+  border-color: transparent;
 }
 .navbar.scrolled .nav-toggle:hover {
   background: rgba(0, 0, 0, .05);

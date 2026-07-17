@@ -25,7 +25,7 @@ import {
 var fonts_default = "/build/_assets/fonts-ECI55RS3.css";
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-A2Y5DR4K.css";
+var global_default = "/build/_assets/global-N4GSTFE3.css";
 
 // app/components/Navigation.tsx
 var import_react = __toESM(require_react(), 1);
@@ -48,7 +48,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\components\\Navigation.tsx"
   );
-  import.meta.hot.lastModified = "1784272804028.5376";
+  import.meta.hot.lastModified = "1784288969029.657";
 }
 function Navigation() {
   _s();
@@ -223,11 +223,6 @@ function Navigation() {
           fileName: "app/components/Navigation.tsx",
           lineNumber: 75,
           columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {}, void 0, false, {
-          fileName: "app/components/Navigation.tsx",
-          lineNumber: 76,
-          columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/components/Navigation.tsx",
@@ -246,128 +241,128 @@ function Navigation() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: `overlay-menu ${isMenuOpen ? "open" : ""}`, id: "overlayMenu", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", { className: "overlay-close", "aria-label": "Close menu", onClick: () => setIsMenuOpen(false), children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("svg", { viewBox: "0 0 512 512", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("polygon", { points: "405 121.8 390.2 107 256 241.2 121.8 107 107 121.8 241.2 256 107 390.2 121.8 405 256 270.8 390.2 405 405 390.2 270.8 256 405 121.8" }, void 0, false, {
         fileName: "app/components/Navigation.tsx",
-        lineNumber: 83,
+        lineNumber: 82,
         columnNumber: 38
       }, this) }, void 0, false, {
         fileName: "app/components/Navigation.tsx",
-        lineNumber: 83,
+        lineNumber: 82,
         columnNumber: 11
       }, this) }, void 0, false, {
         fileName: "app/components/Navigation.tsx",
-        lineNumber: 82,
+        lineNumber: 81,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "overlay-inner", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "overlay-links", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/about", children: "About" }, void 0, false, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 87,
+            lineNumber: 86,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/books", children: "Books" }, void 0, false, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 88,
+            lineNumber: 87,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/speaking", children: "Speaking" }, void 0, false, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 89,
+            lineNumber: 88,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/courses", children: "Courses" }, void 0, false, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 90,
+            lineNumber: 89,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/blog", children: "Blog" }, void 0, false, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 91,
+            lineNumber: 90,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/contact", children: "Contact" }, void 0, false, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 92,
+            lineNumber: 91,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/experiences", children: "Experiences" }, void 0, false, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 93,
+            lineNumber: 92,
             columnNumber: 13
           }, this)
         ] }, void 0, true, {
           fileName: "app/components/Navigation.tsx",
-          lineNumber: 86,
+          lineNumber: 85,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "overlay-side", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "audio-box", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { children: "Reimagine The Status Quo" }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 97,
+              lineNumber: 96,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { children: "Get a free audio training with 3 simple strategies to make giant leaps in your life and work." }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 98,
+              lineNumber: 97,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "https://geni.us/6uDnAm", target: "_blank", children: "download \u2192" }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 99,
+              lineNumber: 98,
               columnNumber: 15
             }, this)
           ] }, void 0, true, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 96,
+            lineNumber: 95,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "overlay-bestsellers", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { children: "WSJ BESTSELLERS:" }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 102,
+              lineNumber: 101,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "https://geni.us/6uDnAm", target: "_blank", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("i", { children: "Awaken Your Genius" }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 103,
+              lineNumber: 102,
               columnNumber: 64
             }, this) }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 103,
+              lineNumber: 102,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "https://geni.us/TLaRS", target: "_blank", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("i", { children: "Think Like a Rocket Scientist" }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 104,
+              lineNumber: 103,
               columnNumber: 63
             }, this) }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 104,
+              lineNumber: 103,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/SDje6V3rSxOj3fvu53ighA/260793/awakenyourgenius_1e.jpg", alt: "Awaken Your Genius" }, void 0, false, {
               fileName: "app/components/Navigation.tsx",
-              lineNumber: 105,
+              lineNumber: 104,
               columnNumber: 15
             }, this)
           ] }, void 0, true, {
             fileName: "app/components/Navigation.tsx",
-            lineNumber: 101,
+            lineNumber: 100,
             columnNumber: 13
           }, this)
         ] }, void 0, true, {
           fileName: "app/components/Navigation.tsx",
-          lineNumber: 95,
+          lineNumber: 94,
           columnNumber: 11
         }, this)
       ] }, void 0, true, {
         fileName: "app/components/Navigation.tsx",
-        lineNumber: 85,
+        lineNumber: 84,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/Navigation.tsx",
-      lineNumber: 81,
+      lineNumber: 80,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
@@ -721,4 +716,4 @@ export {
   links,
   meta
 };
-//# sourceMappingURL=/build/root-OJ563F6J.js.map
+//# sourceMappingURL=/build/root-MTUZMTF6.js.map

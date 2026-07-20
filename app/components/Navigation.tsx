@@ -2,16 +2,6 @@ import { useState, useEffect } from "react";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "";
@@ -22,7 +12,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+      <nav className="navbar">
         <div className="nav-container">
           <a href="/" className="nav-logo">
             <img
@@ -55,7 +45,6 @@ export default function Navigation() {
             <li><a href="/experiences" className="nav-link">Experiences</a></li>
           </ul>
           <a href="/newsletter" className="nav-spark">YOUR WEEKLY SPARK</a>
-          <a href="/masterclass" className="nav-masterclass">free masterclass</a>
           <button
             className="nav-toggle"
             aria-label="Open menu"

@@ -34,7 +34,6 @@ body {
   font-family: 'Neue Haas', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
   color: var(--color-black);
-  overflow-x: hidden;
 }
 
 /* Typography */
@@ -67,7 +66,7 @@ img {
 
 /* Navigation */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -91,8 +90,6 @@ img {
   padding: 15px 0;
   position: relative;
 }
-
-.navbar.scrolled { background: var(--color-white); box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
 
 .nav-container {
   max-width: var(--max-width);
@@ -169,8 +166,6 @@ img {
   font-family: 'Inter', sans-serif;
 }
 
-.navbar.scrolled .nav-link { color: var(--color-black); }
-
 .nav-link::after {
   content: '';
   position: absolute;
@@ -184,25 +179,7 @@ img {
 
 .nav-link:hover::after { width: 100%; }
 .nav-link:hover { color: var(--color-yellow); }
-.navbar.scrolled .nav-link:hover { color: var(--color-blue); }
 
-
-/* Free masterclass button (appears on scroll) */
-.nav-masterclass {
-  display: none;
-  background: var(--color-blue);
-  color: var(--color-white);
-  font-family: 'Made Outer Sans Medium', 'Neue Haas', sans-serif;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 10px 18px;
-  border-radius: 50px;
-  white-space: nowrap;
-}
-.nav-masterclass:hover { background: var(--color-light-blue); color: var(--color-white); }
-.navbar.scrolled .nav-spark { display: none; }
-.navbar.scrolled .nav-masterclass { display: inline-block; }
 
 /* Hamburger (always visible in top-right, like the reference site) */
 .nav-toggle {
@@ -220,9 +197,6 @@ img {
 }
 .nav-toggle:hover { background: rgba(255,255,255,0.1); }
 .nav-toggle span { display: block; width: 56px; height: 1px; background: var(--color-white); transition: all 0.3s ease; }
-.navbar.scrolled .nav-toggle { border-color: transparent; }
-.navbar.scrolled .nav-toggle:hover { background: rgba(0,0,0,0.05); }
-.navbar.scrolled .nav-toggle span { background: var(--color-black); }
 
 /* Full-screen overlay menu (slides down from the top, like the reference) */
 .overlay-menu {

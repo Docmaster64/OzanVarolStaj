@@ -34,6 +34,7 @@ body {
   font-family: 'Neue Haas', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
   color: var(--color-black);
+  overflow-x: hidden;
 }
 
 /* Typography */
@@ -257,68 +258,88 @@ img {
   background: var(--color-blue);
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 120px 20px 60px;
+  align-items: flex-start;
+  padding: 60px 20px 60px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: stretch;
   width: 100%;
+  padding-left: 60px;
 }
 
 .hero-content {
   color: var(--color-white);
   z-index: 2;
-  align-self: center;
+  align-self: start;
 }
 
 .hero-right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 100vh;
 }
 
 .hero-title {
-  font-size: clamp(80px, 14vw, 200px);
+  font-size: clamp(150px, 25vw, 400px);
   line-height: 0.85;
-  margin: 24px 0 0;
+  margin: 0;
+  position: absolute;
+  left: -800px;
+  top: 400px;
+  z-index: 3;
+  white-space: nowrap;
 }
 
-.hero-title .ozan { color: var(--color-white); display: block; }
+.hero-title .ozan { color: var(--color-white); display: block; text-align: left; }
 .hero-title .varol { color: var(--color-yellow); display: block; text-align: left; }
 
 .hero-sub {
   font-family: 'Canela Medium', Georgia, serif;
-  font-size: clamp(28px, 4vw, 56px);
+  font-size: clamp(40px, 5.5vw, 74px);
   color: var(--color-white);
   margin: 20px 0 10px;
   line-height: 1.1;
 }
-.hero-sub .actually { font-family: 'Canela Medium Italic', Georgia, serif; color: var(--color-yellow); }
-.hero-join { color: var(--color-yellow); font-family: 'Made Outer Sans Medium', 'Neue Haas', sans-serif; font-size: 15px; letter-spacing: 0.1em; margin-bottom: 8px; }
-.hero-tag { color: var(--color-white); font-size: 18px; margin-bottom: 25px; }
-.hero-divider { width: 388px; max-width: 100%; height: 1px; background: var(--color-white); margin: 15px 0 25px; }
+.hero-sub .actually { font-family: 'Canela Medium Italic', Georgia, serif; color: var(--color-white); }
+.hero-join { color: var(--color-yellow); font-family: 'Made Outer Sans Medium', 'Neue Haas', sans-serif; font-size: 17px; letter-spacing: 0.1em; margin-bottom: 8px; white-space: nowrap; text-transform: uppercase; }
+.hero-tag { color: var(--color-white); font-size: 20px; margin-bottom: 25px; }
 .hero-form { max-width: 480px; }
+
+.highlight-underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .hero-image {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  min-height: 100vh;
+  overflow: visible !important;
 }
 
 .hero-image img {
-  max-height: 620px;
-  width: auto;
+  max-width: none !important;
+  max-height: none !important;
+  position: absolute;
+  width: 800px !important;
+  height: auto !important;
   filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+  left: -200px;
+  top: 0;
 }
 
 /* Press Logos Section */

@@ -13,17 +13,16 @@ export default function Index() {
       <section className="hero">
         <div className="hero-container">
           <div className="hero-content">
-            <h2 className="hero-sub">The One Newsletter You'll <span className="actually">Actually</span> Love</h2>
-            <p className="hero-join"><b>Join 50K+ readers who call it "the email highlight of my week."</b></p>
+            <h2 className="hero-sub">The One Newsletter<br />You'll <span className="actually">Actually</span> Love</h2>
+            <p className="hero-join"><b>Join 50K+ readers who call it "<span className="highlight-underline">the email highlight of my week.</span>"</b></p>
             <p className="hero-tag">Takes 3 minutes to read. Takes longer to shake.</p>
-            <div className="hero-divider"></div>
             <div className="hero-form">
               <script async data-uid="9ae9a39668" src="https://outatime-llc.ck.page/9ae9a39668/index.js"></script>
             </div>
           </div>
           <div className="hero-right">
             <div className="hero-image">
-              <img src="https://static.showit.co/800/Ih3XbA-RRRmJ2zw_AOkzXw/260793/untitled_design_1.png" alt="Ozan Varol" />
+              <img src="https://static.showit.co/1600/Ih3XbA-RRRmJ2zw_AOkzXw/260793/untitled_design_1.png" alt="Ozan Varol" />
             </div>
             <h1 className="hero-title">
               <span className="ozan">OZAN</span>

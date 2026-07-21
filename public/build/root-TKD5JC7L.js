@@ -25,7 +25,7 @@ import {
 var fonts_default = "/build/_assets/fonts-ECI55RS3.css";
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-ZD6RSSVB.css";
+var global_default = "/build/_assets/global-AXRXPLHH.css";
 
 // app/components/Navigation.tsx
 var import_react = __toESM(require_react(), 1);
@@ -702,4 +702,4 @@ export {
   links,
   meta
 };
-//# sourceMappingURL=/build/root-IYEKCSQD.js.map
+//# sourceMappingURL=/build/root-TKD5JC7L.js.map

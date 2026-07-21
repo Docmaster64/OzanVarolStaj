@@ -411,7 +411,7 @@ img {
 }
 .hero {
   background: var(--color-blue);
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   display: flex;
   align-items: flex-start;
   padding: 60px 20px;
@@ -439,25 +439,28 @@ img {
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
 }
 .hero-title {
-  font-size: clamp(150px, 25vw, 400px);
+  font-size: clamp(120px, 20vw, 280px);
   line-height: .85;
-  margin: 0;
+  margin: 24px 0 0;
   position: absolute;
   left: -800px;
-  top: 400px;
+  top: 310px;
   z-index: 3;
   white-space: nowrap;
 }
 .hero-title .ozan {
-  color: var(--color-white);
+  color: var(--color-yellow);
   display: block;
   text-align: left;
+  position: relative;
+  left: 280px;
+  top: 100px;
 }
 .hero-title .varol {
-  color: var(--color-yellow);
+  color: var(--color-white);
   display: block;
   text-align: left;
 }
@@ -508,18 +511,18 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   overflow: visible !important;
 }
 .hero-image img {
   max-width: none !important;
   max-height: none !important;
   position: absolute;
-  width: 800px !important;
+  width: 510px !important;
   height: auto !important;
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, .3));
-  left: -200px;
-  top: 0;
+  left: -180px;
+  top: 55px;
 }
 .press-logos-section {
   background: var(--color-white);

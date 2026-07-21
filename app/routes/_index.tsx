@@ -110,17 +110,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Marquee Section */}
-      <section className="marquee">
-        <div className="marquee-content">
-          <div className="marquee-item">Join 50K+ Readers</div>
-          <div className="marquee-item">Weekly Newsletter</div>
-          <div className="marquee-item">Bestselling Author</div>
-          <div className="marquee-item">Keynote Speaker</div>
-          <div className="marquee-item">Former Rocket Scientist</div>
-        </div>
-      </section>
-
       {/* Audio Training Section */}
       <section className="audio">
         <div className="audio-container">

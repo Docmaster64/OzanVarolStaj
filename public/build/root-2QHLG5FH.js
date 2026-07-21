@@ -5,7 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration
-} from "/build/_shared/chunk-H2TLULVD.js";
+} from "/build/_shared/chunk-JXEBHENP.js";
 import "/build/_shared/chunk-U4FRFQSK.js";
 import {
   require_jsx_dev_runtime
@@ -25,7 +25,7 @@ import {
 var fonts_default = "/build/_assets/fonts-ECI55RS3.css";
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-JQHQO4PR.css";
+var global_default = "/build/_assets/global-J4XQRGQI.css";
 
 // app/components/Navigation.tsx
 var import_react = __toESM(require_react(), 1);
@@ -383,204 +383,198 @@ if (import.meta) {
     //@ts-expect-error
     "app\\components\\Footer.tsx"
   );
-  import.meta.hot.lastModified = "1784015652641.3794";
+  import.meta.hot.lastModified = "1784642351686.3486";
 }
 function Footer() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("footer", { className: "footer", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-container", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { src: "https://static.showit.co/1600/Vaf8rrlHQhqmbP081NjgJg/260793/ozan_varol-244.png", alt: "Ozan Varol" }, void 0, false, {
-      fileName: "app/components/Footer.tsx",
-      lineNumber: 25,
-      columnNumber: 11
-    }, this) }, void 0, false, {
-      fileName: "app/components/Footer.tsx",
-      lineNumber: 24,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-content", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-section", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("h4", { className: "footer-heading", children: "navigate" }, void 0, false, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 29,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("ul", { className: "footer-links", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/", children: "Home" }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 31,
-            columnNumber: 19
-          }, this) }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 31,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/about", children: "About" }, void 0, false, {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("footer", { className: "footer", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-container", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-main", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-newsletter", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("h3", { className: "footer-newsletter-title", children: [
+            "JOIN 50K+",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 32,
+              columnNumber: 62
+            }, this),
+            "READERS"
+          ] }, void 0, true, {
             fileName: "app/components/Footer.tsx",
             lineNumber: 32,
-            columnNumber: 19
-          }, this) }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 32,
-            columnNumber: 15
+            columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/speaking", children: "Speaking" }, void 0, false, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("p", { className: "footer-newsletter-text", children: "Join 50K+ readers who call it 'the email highlight of my week.' Takes 3 minutes to read. Takes longer to shake." }, void 0, false, {
             fileName: "app/components/Footer.tsx",
             lineNumber: 33,
-            columnNumber: 19
-          }, this) }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 33,
-            columnNumber: 15
+            columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/blog", children: "Blog" }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 34,
-            columnNumber: 19
-          }, this) }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 34,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/newsletter", children: "Newsletter" }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 35,
-            columnNumber: 19
-          }, this) }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 35,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/contact", children: "Contact" }, void 0, false, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/newsletter", className: "footer-subscribe", children: [
+            "SUBSCRIBE ",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("span", { className: "footer-arrow", children: "\u2192" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 37,
+              columnNumber: 25
+            }, this)
+          ] }, void 0, true, {
             fileName: "app/components/Footer.tsx",
             lineNumber: 36,
-            columnNumber: 19
-          }, this) }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 36,
-            columnNumber: 15
+            columnNumber: 13
           }, this)
         ] }, void 0, true, {
           fileName: "app/components/Footer.tsx",
-          lineNumber: 30,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, true, {
-        fileName: "app/components/Footer.tsx",
-        lineNumber: 28,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-section", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("h4", { className: "footer-heading", children: "books" }, void 0, false, {
+          lineNumber: 31,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-links-grid", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-nav", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/", children: "Home" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 42,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/about", children: "About" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 43,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/speaking", children: "Speaking" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 44,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/experiences", children: "Experiences" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 45,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/blog", children: "Blog" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 46,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/newsletter", children: "Newsletter" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 47,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/contact", children: "Contact" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 48,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, true, {
+            fileName: "app/components/Footer.tsx",
+            lineNumber: 41,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-books", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/rocket-scientist", children: "Think Like A Rocket Scientist" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 51,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/awaken", children: "Awaken Your Genius" }, void 0, false, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 52,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, true, {
+            fileName: "app/components/Footer.tsx",
+            lineNumber: 50,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
           fileName: "app/components/Footer.tsx",
           lineNumber: 40,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("ul", { className: "footer-links", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/rocket-scientist", children: "Think Like A Rocket Scientist" }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 42,
-            columnNumber: 19
-          }, this) }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 42,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/awaken", children: "Awaken Your Genius" }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 43,
-            columnNumber: 19
-          }, this) }, void 0, false, {
-            fileName: "app/components/Footer.tsx",
-            lineNumber: 43,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, true, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 41,
-          columnNumber: 13
+          columnNumber: 11
         }, this)
       ] }, void 0, true, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 39,
-        columnNumber: 11
+        lineNumber: 30,
+        columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-section", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("h4", { className: "footer-heading", children: "join 50k+ readers" }, void 0, false, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 47,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("p", { className: "footer-text", children: "Join 50K+ readers who call it 'the email highlight of my week.' Takes 3 minutes to read. Takes longer to shake." }, void 0, false, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 48,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/newsletter", className: "footer-link", children: "subscribe \u2192" }, void 0, false, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 49,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, true, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-scroll-top-wrapper", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("button", { onClick: scrollToTop, className: "footer-scroll-top", "aria-label": "Scroll to top", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { src: "https://static.showit.co/200/ToPPkbZRT0C0XqIAErQWtg/260793/ozan_varol-283.png", alt: "Scroll to top" }, void 0, false, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 46,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, true, {
-      fileName: "app/components/Footer.tsx",
-      lineNumber: 27,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-bottom", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/", className: "footer-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { src: "https://static.showit.co/200/ToPPkbZRT0C0XqIAErQWtg/260793/ozan_varol-283.png", alt: "Ozan Varol" }, void 0, false, {
-        fileName: "app/components/Footer.tsx",
-        lineNumber: 54,
+        lineNumber: 58,
         columnNumber: 13
       }, this) }, void 0, false, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 53,
+        lineNumber: 57,
         columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("p", { className: "footer-copyright", children: [
-        "Copyright 2025 Reimagine Ventures LLC |",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/terms", children: "terms and conditions" }, void 0, false, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 58,
-          columnNumber: 13
-        }, this),
-        " |",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/privacy-policy", children: "privacy policy" }, void 0, false, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 59,
-          columnNumber: 13
-        }, this),
-        " |",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/affiliate-disclosure", children: "affiliate disclosure" }, void 0, false, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 60,
-          columnNumber: 13
-        }, this),
-        " |",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "https://megganstefan.com/", target: "_blank", children: "site credit" }, void 0, false, {
-          fileName: "app/components/Footer.tsx",
-          lineNumber: 61,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, true, {
+      }, this) }, void 0, false, {
         fileName: "app/components/Footer.tsx",
         lineNumber: 56,
-        columnNumber: 11
+        columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/Footer.tsx",
-      lineNumber: 52,
+      lineNumber: 29,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-bottom", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-bottom-content", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-bottom-left", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("p", { className: "footer-copyright", children: [
+      "COPYRIGHT 2025 REIMAGINE VENTURES LLC |",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/terms", children: "TERMS AND CONDITIONS" }, void 0, false, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 68,
+        columnNumber: 17
+      }, this),
+      " |",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/privacy-policy", children: "PRIVACY POLICY" }, void 0, false, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 69,
+        columnNumber: 17
+      }, this),
+      " |",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "/affiliate-disclosure", children: "AFFILIATE DISCLOSURE" }, void 0, false, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 70,
+        columnNumber: 17
+      }, this),
+      " |",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("a", { href: "https://megganstefan.com/", target: "_blank", children: "SITE CREDIT" }, void 0, false, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 71,
+        columnNumber: 17
+      }, this)
+    ] }, void 0, true, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 66,
+      columnNumber: 15
+    }, this) }, void 0, false, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 65,
+      columnNumber: 13
+    }, this) }, void 0, false, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 64,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 63,
       columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 62,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "footer-watermark", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { src: "https://static.showit.co/2400/Vaf8rrlHQhqmbP081NjgJg/260793/ozan_varol-244.png", alt: "Ozan Varol" }, void 0, false, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 78,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 77,
+      columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/components/Footer.tsx",
-    lineNumber: 23,
-    columnNumber: 7
-  }, this) }, void 0, false, {
-    fileName: "app/components/Footer.tsx",
-    lineNumber: 22,
+    lineNumber: 28,
     columnNumber: 10
   }, this);
 }
@@ -702,4 +696,4 @@ export {
   links,
   meta
 };
-//# sourceMappingURL=/build/root-5PDGT6EP.js.map
+//# sourceMappingURL=/build/root-2QHLG5FH.js.map

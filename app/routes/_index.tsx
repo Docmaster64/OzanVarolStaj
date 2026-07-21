@@ -9,6 +9,25 @@ export const meta: MetaFunction = () => [
 
 export default function Index() {
   useEffect(() => {
+    // Animate hero title on scroll
+    const ozan = document.querySelector(".hero-title .ozan");
+    const varol = document.querySelector(".hero-title .varol");
+
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        if (ozan && !ozan.classList.contains("animate")) ozan.classList.add("animate");
+        if (varol && !varol.classList.contains("animate")) varol.classList.add("animate");
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
     // Check if script already exists to avoid duplicates
     const container = document.getElementById("hero-convertkit-form");
     if (!container) return;

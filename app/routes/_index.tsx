@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { MetaFunction } from "@remix-run/node";
 import QuoteIcon from "../components/QuoteIcon";
 
@@ -7,6 +8,19 @@ export const meta: MetaFunction = () => [
 ];
 
 export default function Index() {
+  useEffect(() => {
+    // Check if script already exists to avoid duplicates
+    const container = document.getElementById("hero-convertkit-form");
+    if (!container) return;
+    if (container.querySelector("script[data-uid='9ae9a39668']")) return;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.setAttribute("data-uid", "9ae9a39668");
+    script.src = "https://outatime-llc.ck.page/9ae9a39668/index.js";
+    container.appendChild(script);
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
@@ -16,9 +30,7 @@ export default function Index() {
             <h2 className="hero-sub">The One Newsletter<br />You'll <span className="actually">Actually</span> Love</h2>
             <p className="hero-join"><b>Join 50K+ readers who call it "<span className="highlight-underline">the email highlight of my week.</span>"</b></p>
             <p className="hero-tag">Takes 3 minutes to read. Takes longer to shake.</p>
-            <div className="hero-form">
-              <script async data-uid="9ae9a39668" src="https://outatime-llc.ck.page/9ae9a39668/index.js"></script>
-            </div>
+            <div className="hero-form" id="hero-convertkit-form"></div>
           </div>
           <div className="hero-right">
             <div className="hero-image">

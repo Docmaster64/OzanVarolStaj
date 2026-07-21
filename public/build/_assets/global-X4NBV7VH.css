@@ -458,11 +458,13 @@ img {
   position: relative;
   left: 280px;
   top: 100px;
+  animation: slideOzanFromRight 3s ease-out forwards;
 }
 .hero-title .varol {
   color: var(--color-white);
   display: block;
   text-align: left;
+  animation: slideVarolFromLeft 3s ease-out forwards;
 }
 .hero-sub {
   font-family:
@@ -860,6 +862,26 @@ img {
   }
   to {
     transform: translate(-50%);
+  }
+}
+@keyframes slideOzanFromRight {
+  0% {
+    transform: translate(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideVarolFromLeft {
+  0% {
+    transform: translate(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
   }
 }
 .blog {

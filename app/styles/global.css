@@ -517,7 +517,7 @@ img {
 .page-subtitle { font-size: 24px; color: var(--color-white); opacity: 0.9; }
 
 /* Quote Banner */
-.quote-banner { background: #f4f4f4; padding: 80px 20px; position: relative; z-index: 5; }
+.quote-banner { background: #f4f4f4; padding: 40px 20px; position: relative; z-index: 0; margin-top: -45px; margin-bottom: 60px; }
 .quote-banner-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; }
 .quote-banner-left { position: relative; margin-left: 120px; }
 .quote-banner-icon { position: absolute; top: -55px; left: -40px; z-index: 0; opacity: 1; }

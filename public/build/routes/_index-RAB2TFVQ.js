@@ -36,7 +36,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\_index.tsx"
   );
-  import.meta.hot.lastModified = "1784641880124.166";
+  import.meta.hot.lastModified = "1784814270494.7014";
 }
 var meta = () => [{
   title: "Home | #1 Bestselling Author, Keynote Speaker & Expert on Innovation & Creativity"
@@ -845,6 +845,80 @@ function Index() {
       fileName: "app/routes/_index.tsx",
       lineNumber: 250,
       columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "quote-banner", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-container", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-left", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "quote-banner-text", children: [
+          "If you looked up the word 'polymath' in the dictionary, you may see a picture of Ozan",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 301,
+            columnNumber: 100
+          }, this),
+          "Varol."
+        ] }, void 0, true, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 300,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-author", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "quote-banner-name", children: "\u2014 NIR EYAL" }, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 304,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "quote-banner-title", children: [
+            "Bestselling author of ",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("i", { children: "Hooked and Indistractable" }, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 305,
+              columnNumber: 71
+            }, this)
+          ] }, void 0, true, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 305,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 303,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-icon", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(QuoteIcon, {}, void 0, false, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 308,
+          columnNumber: 15
+        }, this) }, void 0, false, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 307,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 299,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-right", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/SrQb7ryXRy6FUcnmZiSfBg/260793/nireyal_150-scaled.jpg", alt: "Nir Eyal" }, void 0, false, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 313,
+        columnNumber: 15
+      }, this) }, void 0, false, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 312,
+        columnNumber: 13
+      }, this) }, void 0, false, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 311,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 298,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 297,
+      columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/routes/_index.tsx",
@@ -862,4 +936,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-ALQCMAB7.js.map
+//# sourceMappingURL=/build/routes/_index-RAB2TFVQ.js.map

@@ -277,6 +277,32 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* Featured Quote Banner */}
+      <section className="quote-banner">
+        <div className="quote-banner-container">
+          <div className="quote-banner-left">
+            <h3 className="quote-banner-text">
+              If you looked up the word 'polymath' in the dictionary, you may see a picture of Ozan<br />Varol.
+            </h3>
+            <div className="quote-banner-author">
+              <p className="quote-banner-name">— NIR EYAL</p>
+              <p className="quote-banner-title">Bestselling author of <i>Hooked and Indistractable</i></p>
+            </div>
+            <div className="quote-banner-icon">
+              <QuoteIcon />
+            </div>
+          </div>
+          <div className="quote-banner-right">
+            <div className="quote-banner-image">
+              <img 
+                src="https://static.showit.co/200/SrQb7ryXRy6FUcnmZiSfBg/260793/nireyal_150-scaled.jpg" 
+                alt="Nir Eyal" 
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

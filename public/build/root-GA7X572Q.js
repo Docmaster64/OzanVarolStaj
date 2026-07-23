@@ -5,7 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration
-} from "/build/_shared/chunk-H2TLULVD.js";
+} from "/build/_shared/chunk-4EYPCOVH.js";
 import "/build/_shared/chunk-U4FRFQSK.js";
 import {
   require_jsx_dev_runtime
@@ -25,7 +25,7 @@ import {
 var fonts_default = "/build/_assets/fonts-ECI55RS3.css";
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-3BGGVVWI.css";
+var global_default = "/build/_assets/global-FQONWTFD.css";
 
 // app/components/Navigation.tsx
 var import_react = __toESM(require_react(), 1);
@@ -383,7 +383,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\components\\Footer.tsx"
   );
-  import.meta.hot.lastModified = "1784719944637.242";
+  import.meta.hot.lastModified = "1784798210338.718";
 }
 function Footer() {
   const scrollToTop = () => {
@@ -718,4 +718,4 @@ export {
   links,
   meta
 };
-//# sourceMappingURL=/build/root-CXZ5GL7V.js.map
+//# sourceMappingURL=/build/root-GA7X572Q.js.map

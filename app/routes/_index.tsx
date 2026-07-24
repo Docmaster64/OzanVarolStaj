@@ -234,45 +234,31 @@ export default function Index() {
       {/* Testimonials Section */}
       <section className="testimonials">
         <div className="testimonials-container">
-          <div className="testimonial-item">
-            <div className="testimonial-icon">
-              <QuoteIcon />
-            </div>
-            <div className="testimonial-image">
-              <img src="https://static.showit.co/200/O_SM7e_h_aqmetcOFPjDVg/260793/image_4.png" alt="Testimonial" />
-            </div>
+          <div className="testimonial-item frame-blue">
             <div className="testimonial-content">
+              <div className="testimonial-icon">
+                <QuoteIcon />
+              </div>
               <h3 className="testimonial-text">Ozan Varol is always smart and always fascinating.</h3>
               <p className="testimonial-author">—SUSAN CAIN</p>
-              <p className="testimonial-title">New York Times bestselling author of QUIET and BITTERSWEET</p>
+              <p className="testimonial-title">Bestselling author of <i>Bittersweet</i> and <i>Quiet</i></p>
+            </div>
+            <div className="testimonial-image">
+              <img src="https://static.showit.co/200/O_SM7e_h_aqmetcOFPjDVg/260793/image_4.png" alt="Susan Cain" />
             </div>
           </div>
 
-          <div className="testimonial-item">
-            <div className="testimonial-icon">
-              <QuoteIcon />
-            </div>
+          <div className="testimonial-item alt frame-yellow">
             <div className="testimonial-image">
               <img src="https://static.showit.co/200/hMVCmqe8ScKxvOWkrE1bxg/260793/dan_pink.jpg" alt="Dan Pink" />
             </div>
             <div className="testimonial-content">
+              <div className="testimonial-icon">
+                <QuoteIcon />
+              </div>
               <h3 className="testimonial-text">When the stakes are high, the unknowns are threatening, and the problems seem insurmountable, you need a superhero—which means you need Ozan Varol.</h3>
               <p className="testimonial-author">— DAN PINK</p>
-              <p className="testimonial-title">Bestselling author of <i>Bittersweet and Quiet</i></p>
-            </div>
-          </div>
-
-          <div className="testimonial-item">
-            <div className="testimonial-icon">
-              <QuoteIcon />
-            </div>
-            <div className="testimonial-image">
-              <img src="https://static.showit.co/200/SrQb7ryXRy6FUcnmZiSfBg/260793/nireyal_150-scaled.jpg" alt="Nir Eyal" />
-            </div>
-            <div className="testimonial-content">
-              <h3 className="testimonial-text">If you looked up the word 'polymath' in the dictionary, you may see a picture of Ozan Varol.</h3>
-              <p className="testimonial-author">— NIR EYAL</p>
-              <p className="testimonial-title">Bestselling author of <i>Hooked and Indistractable</i></p>
+              <p className="testimonial-title">New York Times–bestselling author of <i>Drive</i></p>
             </div>
           </div>
         </div>

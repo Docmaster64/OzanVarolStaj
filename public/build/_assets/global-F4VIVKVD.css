@@ -646,6 +646,138 @@ img {
   padding: 100px 20px;
   overflow: hidden;
 }
+.testimonials {
+  background: var(--color-white);
+  padding: 120px 20px 100px;
+}
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.testimonial-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 80px;
+  align-items: center;
+  width: 100%;
+}
+.testimonial-icon {
+  margin-bottom: 25px;
+}
+.testimonial-icon svg {
+  width: 90px;
+  height: 90px;
+  display: block;
+}
+.testimonial-item.frame-blue .testimonial-icon svg {
+  fill: var(--color-blue);
+}
+.testimonial-item.frame-yellow .testimonial-icon svg {
+  fill: var(--color-yellow);
+}
+.testimonial-item.frame-orange .testimonial-icon svg {
+  fill: var(--color-orange);
+}
+.testimonial-content {
+  position: relative;
+  z-index: 1;
+}
+.testimonial-text {
+  font-size: 38px;
+  line-height: 1.35;
+  margin-bottom: 20px;
+  font-family:
+    Canela Medium,
+    Georgia,
+    serif;
+  font-weight: 700;
+  color: var(--color-black);
+  max-width: 650px;
+}
+.testimonial-author {
+  font-size: 14px;
+  color: var(--color-black);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 5px;
+  font-family: Inter, sans-serif;
+}
+.testimonial-title {
+  font-size: 15px;
+  color: var(--color-black);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.testimonial-image {
+  width: 190px;
+  height: 260px;
+  border-radius: 0;
+  overflow: visible;
+  position: relative;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.testimonial-image:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 9px solid var(--color-yellow);
+  transform: rotate(-6deg);
+  z-index: 2;
+  pointer-events: none;
+}
+.testimonial-image img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonial-item.alt {
+  grid-template-columns: auto 3fr;
+  justify-self: start;
+  max-width: 100%;
+  margin-left: -60px;
+  margin-right: 0;
+}
+.testimonial-item.alt .testimonial-image {
+  order: -1;
+  margin-right: 100px;
+  margin-left: 150px;
+}
+.testimonial-item.alt .testimonial-content {
+  padding-left: 0;
+  position: relative;
+}
+.testimonial-item.alt .testimonial-icon {
+  position: absolute;
+  top: -30px;
+  left: -25px;
+  order: 0;
+  opacity: 1;
+  z-index: -1;
+}
+.testimonial-item.alt.frame-yellow .testimonial-icon svg {
+  fill: var(--color-yellow);
+}
+.testimonial-item.frame-blue .testimonial-image:after {
+  border-color: var(--color-blue);
+}
+.testimonial-item.frame-yellow .testimonial-image:after {
+  border-color: var(--color-yellow);
+}
+.testimonial-item.frame-orange .testimonial-image:after {
+  border-color: var(--color-orange);
+}
 .speaking-video-background {
   position: absolute;
   top: 0;
@@ -709,10 +841,9 @@ img {
 .testimonial-icon {
   flex-shrink: 0;
 }
-.testimonial-icon svg {
+.testimonial-item.alt .testimonial-icon svg {
   width: 80px;
   height: 80px;
-  fill: var(--color-yellow);
 }
 .testimonial-content {
   flex: 1;
@@ -1007,46 +1138,6 @@ img {
   line-height: 1.8;
   margin-bottom: 20px;
   color: var(--color-white);
-}
-.testimonials {
-  background: var(--color-gray);
-  padding: 100px 20px 80px;
-}
-.testimonials-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-.testimonial-item {
-  background: var(--color-white);
-  padding: 30px;
-  border-radius: 0;
-  box-shadow: 0 10px 30px #00000014;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.testimonial-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 0;
-  overflow: visible;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  border: 3px solid var(--color-yellow);
-  padding: 3px;
-}
-.testimonial-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.testimonials .testimonial-text,
-.testimonials .testimonial-author {
-  color: var(--color-black);
 }
 .page-header {
   background: var(--color-blue);

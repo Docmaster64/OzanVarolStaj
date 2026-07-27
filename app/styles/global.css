@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grotesk:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
 
@@ -520,14 +520,25 @@ img {
 /* Audio Section */
 .audio { background: var(--color-orange); padding: 100px 20px; }
 .audio-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.audio-content { transform: translateX(-30px); }
 .audio-image { position: relative; display: flex; justify-content: center; align-items: center; }
 .audio-main { max-height: 650px; width: auto; }
 .audio-overlay-1, .audio-overlay-2, .audio-gif { position: absolute; max-height: 340px; width: auto; }
 .audio-overlay-1 { top: 60px; right: 140px; z-index: 3; max-height: 270px; }
 .audio-overlay-2 { top: 80px; right: 140px; left: auto; z-index: 2; max-height: 420px; }
-.audio-gif { bottom: -50px; right: -20px; }
-.audio-title { font-size: 36px; margin-bottom: 20px; color: var(--color-white); }
-.audio-description { font-size: 18px; margin-bottom: 30px; color: var(--color-white); }
+.audio-gif { top: 20px; right: -500px; }
+.audio-title { font-family: 'Canela Medium', Georgia, serif; font-size: clamp(36px, 4.5vw, 64px); line-height: 1.05; margin-bottom: 24px; color: var(--color-white); font-weight: 400; }
+/* .audio-title-accent { font-style: italic; } */
+.audio-waveform { display: flex; align-items: center; gap: 3px; margin-bottom: 24px; }
+.audio-waveform span { display: block; width: 3px; background: var(--color-black); border-radius: 999px; animation: audioWave 1.8s ease-in-out infinite; }
+.audio-waveform span:nth-child(odd) { height: 28px; animation-delay: 0s; }
+.audio-waveform span:nth-child(even) { height: 16px; animation-delay: 0.25s; }
+@keyframes audioWave { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(0.45); } }
+.audio-description { font-family: 'Grotesk', 'Made Outer Sans Regular', 'Neue Haas', sans-serif; font-size: clamp(15px, 1.6vw, 18px); line-height: 1.5; margin-bottom: 36px; color: var(--color-white); font-weight: 300; }
+.audio-form { display: flex; flex-direction: column; gap: 16px; max-width: 480px; width: 100%; }
+.audio-form input[type="email"] { padding: 18px 20px; border: none; border-radius: 0; font-size: 16px; font-family: inherit; width: 100%; color: var(--color-black); }
+.audio-form .audio-btn { padding: 18px 20px; border: none; border-radius: 0; background: var(--color-yellow); color: var(--color-black); font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; cursor: pointer; transition: transform 0.2s ease, background 0.2s ease; }
+.audio-form .audio-btn:hover { background: #f5d77a; transform: translateY(-1px); }
 
 /* Mission Section */
 .mission-section { background: var(--color-orange); padding: 100px 20px; }

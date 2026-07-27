@@ -1122,6 +1122,9 @@ img {
   gap: 60px;
   align-items: center;
 }
+.audio-content {
+  transform: translate(-30px);
+}
 .audio-image {
   position: relative;
   display: flex;
@@ -1153,18 +1156,94 @@ img {
   max-height: 420px;
 }
 .audio-gif {
-  bottom: -50px;
-  right: -20px;
+  top: 20px;
+  right: -500px;
 }
 .audio-title {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-family:
+    Canela Medium,
+    Georgia,
+    serif;
+  font-size: clamp(36px, 4.5vw, 64px);
+  line-height: 1.05;
+  margin-bottom: 24px;
   color: var(--color-white);
+  font-weight: 400;
+}
+.audio-waveform {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 24px;
+}
+.audio-waveform span {
+  display: block;
+  width: 3px;
+  background: var(--color-black);
+  border-radius: 999px;
+  animation: audioWave 1.8s ease-in-out infinite;
+}
+.audio-waveform span:nth-child(odd) {
+  height: 28px;
+  animation-delay: 0s;
+}
+.audio-waveform span:nth-child(even) {
+  height: 16px;
+  animation-delay: .25s;
+}
+@keyframes audioWave {
+  0%, to {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(.45);
+  }
 }
 .audio-description {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-family:
+    Grotesk,
+    Made Outer Sans Regular,
+    Neue Haas,
+    sans-serif;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.5;
+  margin-bottom: 36px;
   color: var(--color-white);
+  font-weight: 300;
+}
+.audio-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+  width: 100%;
+}
+.audio-form input[type=email] {
+  padding: 18px 20px;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  font-family: inherit;
+  width: 100%;
+  color: var(--color-black);
+}
+.audio-form .audio-btn {
+  padding: 18px 20px;
+  border: none;
+  border-radius: 0;
+  background: var(--color-yellow);
+  color: var(--color-black);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+.audio-form .audio-btn:hover {
+  background: #f5d77a;
+  transform: translateY(-1px);
 }
 .mission-section {
   background: var(--color-orange);

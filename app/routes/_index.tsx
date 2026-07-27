@@ -120,11 +120,12 @@ export default function Index() {
             <img src="https://static.showit.co/file/ENoNJjXgQzmN5-5ugA_ClQ/260793/audio.gif" alt="Audio" className="audio-gif" />
           </div>
           <div className="audio-content">
-            <h3 className="audio-title">Get A Free Audio Training</h3>
+<h2 className="audio-title">Get A Free<br /><span className="audio-title-accent">Audio Training</span></h2>
             <p className="audio-description">Learn 3 simple strategies to make giant leaps in your life and work.</p>
-            <div className="audio-cta">
-              <a href="/newsletter" className="btn-primary">Download Now &rarr;</a>
-            </div>
+            <form className="audio-form" id="hero-convertkit-form">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit" className="audio-btn">DOWNLOAD</button>
+            </form>
           </div>
         </div>
       </section>

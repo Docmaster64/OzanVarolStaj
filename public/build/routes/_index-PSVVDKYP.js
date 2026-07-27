@@ -36,7 +36,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\_index.tsx"
   );
-  import.meta.hot.lastModified = "1784817507945.7334";
+  import.meta.hot.lastModified = "1785144649023.948";
 }
 var meta = () => [{
   title: "Home | #1 Bestselling Author, Keynote Speaker & Expert on Innovation & Creativity"
@@ -327,7 +327,7 @@ function Index() {
           lineNumber: 132,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/400/KMkLRjdLT9uB6bN5Xe_NgQ/260793/ozan_audio_training_4.png", alt: "Training", className: "audio-overlay-1" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "/ozan_audio_training_4_cropped.png", alt: "Training", className: "audio-overlay-1" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
           lineNumber: 133,
           columnNumber: 13
@@ -688,7 +688,7 @@ function Index() {
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "testimonials", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonials-container", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-item frame-blue", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-item alt reverse frame-blue", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-content", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-icon", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(QuoteIcon, {}, void 0, false, {
             fileName: "app/routes/_index.tsx",
@@ -699,10 +699,18 @@ function Index() {
             lineNumber: 254,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "testimonial-text", children: "Ozan Varol is always smart and always fascinating." }, void 0, false, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "testimonial-text", children: [
+            "Ozan Varol\xA0is\xA0always\xA0smart\xA0and\xA0always",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 257,
+              columnNumber: 111
+            }, this),
+            "fascinating."
+          ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
             lineNumber: 257,
-            columnNumber: 15
+            columnNumber: 16
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "testimonial-author", children: "\u2014SUSAN CAIN" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
@@ -732,7 +740,7 @@ function Index() {
           lineNumber: 253,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/O_SM7e_h_aqmetcOFPjDVg/260793/image_4.png", alt: "Susan Cain" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/400/WqI8LJ8mQc-n_QvfzCCV6g/260793/susan-cain-dec-2021-credit-aaron-fedor-sus_2702a_crop.png", alt: "Susan Cain" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
           lineNumber: 262,
           columnNumber: 15
@@ -897,4 +905,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-Q34IEDIM.js.map
+//# sourceMappingURL=/build/routes/_index-PSVVDKYP.js.map

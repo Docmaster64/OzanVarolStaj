@@ -293,11 +293,11 @@ img {
 }
 
 .hero-title {
-  font-size: clamp(120px, 20vw, 280px);
+  font-size: clamp(140px, 22vw, 320px);
   line-height: 0.85;
   margin: 24px 0 0;
   position: absolute;
-  left: -800px;
+  left: -540px;
   top: 310px;
   z-index: 3;
   white-space: nowrap;
@@ -308,8 +308,8 @@ img {
   display: block;
   text-align: left;
   position: relative;
-  left: 280px;
-  top: 100px;
+  left: 340px;
+  top: 110px;
   transform: translateX(100vw);
   opacity: 0;
   transition: none;
@@ -328,6 +328,7 @@ img {
   opacity: 0;
   transition: none;
   position: relative;
+  left: 80px;
   z-index: 1;
 }
 
@@ -366,11 +367,11 @@ img {
   max-width: none !important;
   max-height: none !important;
   position: absolute;
-  width: 510px !important;
+  width: 560px !important;
   height: auto !important;
   filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
-  left: -180px;
-  top: 55px;
+  left: -260px;
+  top: 65px;
 }
 
 /* Press Logos Section */
@@ -421,6 +422,12 @@ img {
 .testimonial-item.alt .testimonial-image { order: -1; margin-right: 100px; margin-left: 150px; }
 .testimonial-item.alt .testimonial-content { padding-left: 0; position: relative; }
 .testimonial-item.alt .testimonial-icon { position: absolute; top: -60px; left: -40px; order: 0; opacity: 1; z-index: -1; }
+.testimonial-item.reverse { grid-template-columns: 3fr auto; margin-left: 0; margin-right: -60px; }
+.testimonial-item.reverse .testimonial-image { order: 1; margin-left: 100px; margin-right: 150px; }
+.testimonial-item.reverse .testimonial-content { padding-left: 0; padding-right: 40px; position: relative; margin-left: 120px; margin-top: -30px; }
+.testimonial-item.reverse .testimonial-icon { position: absolute; top: -60px; left: -40px; right: auto; order: 0; opacity: 1; z-index: -1; }
+.testimonial-item.reverse .testimonial-author { font-weight: 400; }
+.testimonial-item.reverse .testimonial-title { font-weight: 400; line-height: 2; letter-spacing: 0.2em; }
 .testimonial-item.alt.frame-yellow .testimonial-icon svg { fill: var(--color-yellow); }
 .testimonial-item.frame-blue .testimonial-image::after { border-color: var(--color-blue); }
 .testimonial-item.frame-yellow .testimonial-image::after { border-color: var(--color-yellow); }
@@ -437,6 +444,7 @@ img {
 
 .testimonial-icon { flex-shrink: 0; }
 .testimonial-item.alt .testimonial-icon svg { width: 130px; height: 130px; }
+.testimonial-item.alt.reverse .testimonial-text { white-space: nowrap; max-width: none; }
 .testimonial-content { flex: 1; }
 .testimonial-text { font-size: 34px; margin-bottom: 10px; color: var(--color-black); line-height: 1.4; font-style: normal; font-weight: 300; }
 .testimonial-author { font-size: 16px; color: var(--color-black); font-weight: 600; }
@@ -510,14 +518,14 @@ img {
 .blog-arrow svg { width: 100%; height: 100%; fill: var(--color-orange); }
 
 /* Audio Section */
-.audio { background: var(--color-blue); padding: 100px 20px; }
+.audio { background: var(--color-orange); padding: 100px 20px; }
 .audio-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .audio-image { position: relative; display: flex; justify-content: center; align-items: center; }
-.audio-main { max-height: 400px; width: auto; }
-.audio-overlay-1, .audio-overlay-2, .audio-gif { position: absolute; max-height: 200px; width: auto; }
-.audio-overlay-1 { top: 0; right: 50px; }
-.audio-overlay-2 { bottom: 0; left: 50px; }
-.audio-gif { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.audio-main { max-height: 650px; width: auto; }
+.audio-overlay-1, .audio-overlay-2, .audio-gif { position: absolute; max-height: 340px; width: auto; }
+.audio-overlay-1 { top: 35px; right: 130px; z-index: 3; }
+.audio-overlay-2 { top: 80px; right: 140px; left: auto; z-index: 2; max-height: 420px; }
+.audio-gif { bottom: -50px; right: -20px; }
 .audio-title { font-size: 36px; margin-bottom: 20px; color: var(--color-white); }
 .audio-description { font-size: 18px; margin-bottom: 30px; color: var(--color-white); }
 
@@ -534,7 +542,7 @@ img {
 .page-subtitle { font-size: 24px; color: var(--color-white); opacity: 0.9; }
 
 /* Quote Banner */
-.quote-banner { background: #f4f4f4; padding: 40px 20px; position: relative; z-index: 0; margin-top: -45px; margin-bottom: 60px; }
+.quote-banner { background: var(--color-white); padding: 100px 20px 150px; position: relative; z-index: 0; margin-top: -45px; margin-bottom: 40px; }
 .quote-banner-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; }
 .quote-banner-left { position: relative; margin-left: 120px; }
 .quote-banner-icon { position: absolute; top: -55px; left: -40px; z-index: 0; opacity: 1; }

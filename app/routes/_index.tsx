@@ -115,7 +115,7 @@ export default function Index() {
         <div className="audio-container">
           <div className="audio-image">
             <img src="https://static.showit.co/800/3SWKdhu6TuW85ECqrEiGXg/shared/phone-earbuds.png" alt="Audio Training" className="audio-main" />
-            <img src="https://static.showit.co/400/KMkLRjdLT9uB6bN5Xe_NgQ/260793/ozan_audio_training_4.png" alt="Training" className="audio-overlay-1" />
+            <img src="/ozan_audio_training_4_cropped.png" alt="Training" className="audio-overlay-1" />
             <img src="https://static.showit.co/400/Zz4JnRI7TgO440xGw0eRbA/shared/podcastblank.png" alt="Podcast" className="audio-overlay-2" />
             <img src="https://static.showit.co/file/ENoNJjXgQzmN5-5ugA_ClQ/260793/audio.gif" alt="Audio" className="audio-gif" />
           </div>
@@ -234,17 +234,17 @@ export default function Index() {
       {/* Testimonials Section */}
       <section className="testimonials">
         <div className="testimonials-container">
-          <div className="testimonial-item frame-blue">
+          <div className="testimonial-item alt reverse frame-blue">
             <div className="testimonial-content">
               <div className="testimonial-icon">
                 <QuoteIcon />
               </div>
-              <h3 className="testimonial-text">Ozan Varol is always smart and always fascinating.</h3>
+               <h3 className="testimonial-text">Ozan Varol&nbsp;is&nbsp;always&nbsp;smart&nbsp;and&nbsp;always<br />fascinating.</h3>
               <p className="testimonial-author">—SUSAN CAIN</p>
               <p className="testimonial-title">Bestselling author of <i>Bittersweet</i> and <i>Quiet</i></p>
             </div>
             <div className="testimonial-image">
-              <img src="https://static.showit.co/200/O_SM7e_h_aqmetcOFPjDVg/260793/image_4.png" alt="Susan Cain" />
+              <img src="https://static.showit.co/400/WqI8LJ8mQc-n_QvfzCCV6g/260793/susan-cain-dec-2021-credit-aaron-fedor-sus_2702a_crop.png" alt="Susan Cain" />
             </div>
           </div>
 

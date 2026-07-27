@@ -523,7 +523,7 @@ img {
 .audio-image { position: relative; display: flex; justify-content: center; align-items: center; }
 .audio-main { max-height: 650px; width: auto; }
 .audio-overlay-1, .audio-overlay-2, .audio-gif { position: absolute; max-height: 340px; width: auto; }
-.audio-overlay-1 { top: 35px; right: 130px; z-index: 3; }
+.audio-overlay-1 { top: 60px; right: 140px; z-index: 3; max-height: 270px; }
 .audio-overlay-2 { top: 80px; right: 140px; left: auto; z-index: 2; max-height: 420px; }
 .audio-gif { bottom: -50px; right: -20px; }
 .audio-title { font-size: 36px; margin-bottom: 20px; color: var(--color-white); }

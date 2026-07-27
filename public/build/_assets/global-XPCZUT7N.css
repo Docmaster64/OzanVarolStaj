@@ -1140,9 +1140,10 @@ img {
   width: auto;
 }
 .audio-overlay-1 {
-  top: 35px;
-  right: 130px;
+  top: 60px;
+  right: 140px;
   z-index: 3;
+  max-height: 270px;
 }
 .audio-overlay-2 {
   top: 80px;

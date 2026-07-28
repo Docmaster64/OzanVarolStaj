@@ -36,7 +36,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\_index.tsx"
   );
-  import.meta.hot.lastModified = "1785166008730.3655";
+  import.meta.hot.lastModified = "1785251686964.7092";
 }
 var meta = () => [{
   title: "Home | #1 Bestselling Author, Keynote Speaker & Expert on Innovation & Creativity"
@@ -62,6 +62,79 @@ function Index() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   (0, import_react.useEffect)(() => {
+    const gallery = document.querySelector(".about-gallery");
+    if (!gallery)
+      return;
+    const slides = gallery.querySelectorAll("img");
+    const dotsWrap = document.querySelector(".about-dots");
+    let current = 0;
+    let timer = null;
+    if (dotsWrap && slides.length) {
+      slides.forEach((_, i) => {
+        const btn = document.createElement("button");
+        btn.setAttribute("aria-label", "Slide " + (i + 1));
+        if (i === 0)
+          btn.classList.add("active");
+        btn.addEventListener("click", () => {
+          goTo(i);
+          restart();
+        });
+        dotsWrap.appendChild(btn);
+      });
+    }
+    function goTo(index) {
+      slides.forEach((s, i) => s.classList.toggle("active", i === index));
+      if (dotsWrap) {
+        dotsWrap.querySelectorAll("button").forEach((b, i) => {
+          b.classList.toggle("active", i === index);
+        });
+      }
+      current = index;
+    }
+    function next() {
+      goTo((current + 1) % slides.length);
+    }
+    function start() {
+      timer = setInterval(next, 5e3);
+    }
+    function stop() {
+      if (timer)
+        clearInterval(timer);
+    }
+    function restart() {
+      stop();
+      start();
+    }
+    if (slides.length > 1) {
+      goTo(0);
+      start();
+      gallery.addEventListener("mouseenter", stop);
+      gallery.addEventListener("mouseleave", start);
+    }
+    return () => {
+      if (timer)
+        clearInterval(timer);
+    };
+  }, []);
+  (0, import_react.useEffect)(() => {
+    const fadeEls = document.querySelectorAll(".fade-in");
+    if ("IntersectionObserver" in window && fadeEls.length) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            io.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15
+      });
+      fadeEls.forEach((el) => io.observe(el));
+    } else {
+      fadeEls.forEach((el) => el.classList.add("visible"));
+    }
+  }, []);
+  (0, import_react.useEffect)(() => {
     const container = document.getElementById("hero-convertkit-form");
     if (!container)
       return;
@@ -80,271 +153,388 @@ function Index() {
           "The One Newsletter",
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 64,
+            lineNumber: 137,
             columnNumber: 56
           }, this),
           "You'll ",
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "actually", children: "Actually" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 64,
+            lineNumber: 137,
             columnNumber: 69
           }, this),
           " Love"
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 64,
+          lineNumber: 137,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "hero-join", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("b", { children: [
           'Join 50K+ readers who call it "',
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "highlight-underline", children: "the email highlight of my week." }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 65,
+            lineNumber: 138,
             columnNumber: 72
           }, this),
           '"'
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 65,
+          lineNumber: 138,
           columnNumber: 38
         }, this) }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 65,
+          lineNumber: 138,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "hero-tag", children: "Takes 3 minutes to read. Takes longer to shake." }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 66,
+          lineNumber: 139,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "hero-form", id: "hero-convertkit-form" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 67,
+          lineNumber: 140,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 63,
+        lineNumber: 136,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "hero-right", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "hero-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/1600/Ih3XbA-RRRmJ2zw_AOkzXw/260793/untitled_design_1.png", alt: "Ozan Varol" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 71,
+          lineNumber: 144,
           columnNumber: 15
         }, this) }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 70,
+          lineNumber: 143,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "hero-title", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "ozan", children: "OZAN" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 74,
+            lineNumber: 147,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "varol", children: "VAROL" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 75,
+            lineNumber: 148,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 73,
+          lineNumber: 146,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 69,
+        lineNumber: 142,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 62,
+      lineNumber: 135,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 61,
+      lineNumber: 134,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "press-logos-section", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logos", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/RuRBwNDmTdueZgR42rHJNg/260793/wsj-logo.png", alt: "WSJ" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 85,
+        lineNumber: 158,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 85,
+        lineNumber: 158,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/PQtYbaDHT6ui7P67lsRdAA/260793/time-logo.png", alt: "TIME" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 86,
+        lineNumber: 159,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 86,
+        lineNumber: 159,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/pWDpYRR4RmO3Nk1RfL-3fQ/260793/fast-company-2.jpg", alt: "Fast Company" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 87,
+        lineNumber: 160,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 87,
+        lineNumber: 160,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/oY03gf4VQ5mQeqUwAyEJag/260793/cnn-logo.png", alt: "CNN" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 88,
+        lineNumber: 161,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 88,
+        lineNumber: 161,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/uTC-oOlySYeF6HDatCuA-w/260793/slate-logo.png", alt: "Slate" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 89,
+        lineNumber: 162,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 89,
+        lineNumber: 162,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/FQQRs84MRB2TEptVxwLvGw/260793/bbc-logo.png", alt: "BBC" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 90,
+        lineNumber: 163,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 90,
+        lineNumber: 163,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/Io-sD5YfRRGFz_pZWFnnxA/260793/the-washington-post-logo.png", alt: "Washington Post" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 91,
+        lineNumber: 164,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 91,
+        lineNumber: 164,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "press-logo", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/cxHse0WKRe6mfy1thT7vIQ/260793/newsweek-logo.png", alt: "Newsweek" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 92,
+        lineNumber: 165,
         columnNumber: 41
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 92,
+        lineNumber: 165,
         columnNumber: 13
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 84,
+      lineNumber: 157,
       columnNumber: 11
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 83,
+      lineNumber: 156,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 82,
+      lineNumber: 155,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "about", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "about-container", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "about-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "about-gallery", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/400/vjojJALxToO9k6fCfUVsJg/260793/ozan_1503.jpg", alt: "Ozan Varol" }, void 0, false, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 102,
-        columnNumber: 15
-      }, this) }, void 0, false, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 101,
-        columnNumber: 13
-      }, this) }, void 0, false, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 100,
-        columnNumber: 11
-      }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "about-content", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "about-title", children: "Hey, I'm Ozan" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "about-eyebrow", children: "I'M OZAN VAROL" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 106,
+          lineNumber: 174,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", { className: "about-subtitle", children: "I'M A ROCKET SCIENTIST TURNED BESTSELLING AUTHOR" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "about-subtitle", children: [
+          "a ROCKET SCIENTIST TURNED BESTSELLING",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 175,
+            columnNumber: 81
+          }, this),
+          "AUTHOR"
+        ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 107,
+          lineNumber: 175,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "about-text", children: "I've spent my career building things and then walking away from them \u2014 rocket science, law, a tenured professorship \u2014 each time following the energy toward what was next." }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "about-text fade-in", children: [
+          "I've spent my career building things and then walking away from them \u2014 rocket science, law, a tenured professorship \u2014 each time following the energy toward what was next.",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 176,
+            columnNumber: 217
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 176,
+            columnNumber: 223
+          }, this),
+          "Now I write, speak, and teach about the moments that define us: the leaps we almost don't take, the things we hold onto too long, and the breakthroughs that only happen when we stop playing it safe.",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 176,
+            columnNumber: 427
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 176,
+            columnNumber: 433
+          }, this),
+          "My books have been translated into 25+ languages and selected by Adam Grant as his #1 leadership book of the year. I've delivered 100+ keynotes to organizations like Microsoft, Google X, Salesforce, Goldman Sachs, and the U.S. Department of State."
+        ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 108,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "about-text", children: "Now I write, speak, and teach about the moments that define us: the leaps we almost don't take, the things we hold onto too long, and the breakthroughs that only happen when we stop playing it safe." }, void 0, false, {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 111,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "about-text", children: "My books have been translated into 25+ languages and selected by Adam Grant as his #1 leadership book of the year. I've delivered 100+ keynotes to organizations like Microsoft, Google X, Salesforce, Goldman Sachs, and the U.S. Department of State." }, void 0, false, {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 114,
+          lineNumber: 176,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 105,
+        lineNumber: 173,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "about-gallery-wrap", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "about-gallery", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { className: "active", src: "https://static.showit.co/400/vjojJALxToO9k6fCfUVsJg/260793/ozan_1503.jpg", alt: "Ozan Varol" }, void 0, false, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 180,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/400/ZAImgYHOQ66OsMvVCbdujQ/260793/ozan_1379.jpg", alt: "Ozan Varol" }, void 0, false, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 181,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/400/hHPLAClLRzmHLoI_pKMhZQ/260793/ozan_1515.jpg", alt: "Ozan Varol" }, void 0, false, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 182,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 179,
+        columnNumber: 13
+      }, this) }, void 0, false, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 178,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 99,
+      lineNumber: 172,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 98,
+      lineNumber: 171,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "quote-section", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "quote-text", children: "Most people hold on too long. I've built my life around letting go." }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "quote-section", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-bg-top" }, void 0, false, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 190,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-bg-bottom" }, void 0, false, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 191,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-container", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-images", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-image-original", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "/image_2.png", alt: "Original" }, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 195,
+            columnNumber: 15
+          }, this) }, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 194,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-image-yellow", "aria-hidden": "true" }, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 197,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 193,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-card", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "quote-text", children: [
+            "Most people hold",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 200,
+              columnNumber: 56
+            }, this),
+            "on too long. I've",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 200,
+              columnNumber: 79
+            }, this),
+            "built my life",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 200,
+              columnNumber: 98
+            }, this),
+            "around letting go."
+          ] }, void 0, true, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 200,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", { className: "quote-btn", children: [
+            "COUNT ME IN!",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("svg", { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2.5", "stroke-linecap": "round", "stroke-linejoin": "round", children: [
+              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("line", { x1: "5", y1: "12", x2: "19", y2: "12" }, void 0, false, {
+                fileName: "app/routes/_index.tsx",
+                lineNumber: 203,
+                columnNumber: 140
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("polyline", { points: "12 5 19 12 12 19" }, void 0, false, {
+                fileName: "app/routes/_index.tsx",
+                lineNumber: 203,
+                columnNumber: 179
+              }, this)
+            ] }, void 0, true, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 203,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, true, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 201,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 199,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 192,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 124,
-      columnNumber: 11
-    }, this) }, void 0, false, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 123,
-      columnNumber: 9
-    }, this) }, void 0, false, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 122,
+      lineNumber: 189,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "audio", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "audio-container", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "audio-image", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/800/3SWKdhu6TuW85ECqrEiGXg/shared/phone-earbuds.png", alt: "Audio Training", className: "audio-main" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 132,
+          lineNumber: 213,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "/ozan_audio_training_4_cropped.png", alt: "Training", className: "audio-overlay-1" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 133,
+          lineNumber: 214,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/400/Zz4JnRI7TgO440xGw0eRbA/shared/podcastblank.png", alt: "Podcast", className: "audio-overlay-2" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 134,
+          lineNumber: 215,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/file/ENoNJjXgQzmN5-5ugA_ClQ/260793/audio.gif", alt: "Audio", className: "audio-gif" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 135,
+          lineNumber: 216,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 131,
+        lineNumber: 212,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "audio-content", children: [
@@ -352,358 +542,328 @@ function Index() {
           "Get A Free",
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 138,
+            lineNumber: 219,
             columnNumber: 39
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "audio-title-accent", children: "Audio Training" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 138,
+            lineNumber: 219,
             columnNumber: 45
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 138,
+          lineNumber: 219,
           columnNumber: 1
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "audio-description", children: "Learn 3 simple strategies to make giant leaps in your life and work." }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 139,
+          lineNumber: 220,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("form", { className: "audio-form", id: "hero-convertkit-form", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("input", { type: "email", placeholder: "Email Address", required: true }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 141,
+            lineNumber: 222,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", { type: "submit", className: "audio-btn", children: "DOWNLOAD" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 142,
+            lineNumber: 223,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 140,
+          lineNumber: 221,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 137,
+        lineNumber: 218,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 130,
+      lineNumber: 211,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 129,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "mission-section", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "container", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", { className: "mission-title", children: "The next chapter starts when you close this one." }, void 0, false, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 151,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "mission-text", children: "Every ending is a beginning in disguise. The moment you let go of what's familiar\u2014whether it's a job, a relationship, or an old version of yourself\u2014you create space for something new to emerge." }, void 0, false, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 152,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "mission-text", children: "This is the art of strategic surrender. It's not about giving up; it's about giving way to what's trying to happen. The most successful people aren't those who hold on the tightest, but those who know when to release." }, void 0, false, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 155,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "mission-text", children: "I help people and organizations make this transition\u2014from the known to the unknown, from the comfortable to the transformative. Because the best view comes after the hardest climb." }, void 0, false, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 158,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, true, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 150,
-      columnNumber: 9
-    }, this) }, void 0, false, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 149,
+      lineNumber: 210,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "speaking", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "speaking-video-background", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("video", { autoPlay: true, muted: true, loop: true, playsInline: true, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("source", { src: "https://static.showit.co/file/WQOtPRx3cWRyVNQq2q-txA/260793/speakingclip.mp4", type: "video/mp4" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 168,
+        lineNumber: 233,
         columnNumber: 13
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 167,
+        lineNumber: 232,
         columnNumber: 11
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 166,
+        lineNumber: 231,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "speaking-container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "speaking-content", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "speaking-title", children: "KEYNOTE SPEAKING" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 173,
+          lineNumber: 238,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "speaking-badge", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h4", { className: "speaking-badge-title", children: "the best keynote speaker." }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 175,
+            lineNumber: 240,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "speaking-badge-author", children: "\u2014 Heather Hoerle" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 176,
+            lineNumber: 241,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 174,
+          lineNumber: 239,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "speaking-testimonial", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-icon", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(QuoteIcon, {}, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 180,
+            lineNumber: 245,
             columnNumber: 17
           }, this) }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 179,
+            lineNumber: 244,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-content", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h4", { className: "testimonial-text", children: "AMONG THE TOP 3 SPEAKERS I'VE EVER ENCOUNTERED IN MY LIFE." }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 183,
+              lineNumber: 248,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "testimonial-author", children: "\u2014KATHERINE COHEN" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 184,
+              lineNumber: 249,
               columnNumber: 17
             }, this)
           ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 182,
+            lineNumber: 247,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 178,
+          lineNumber: 243,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/speaking", className: "btn-link", children: "learn more \u2192" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 187,
+          lineNumber: 252,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 172,
+        lineNumber: 237,
         columnNumber: 11
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 171,
+        lineNumber: 236,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 165,
+      lineNumber: 230,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "book", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "book-container", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "book-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/800/U9qXHFfiSBic8gCLv49PnQ/260793/awakenyourgenius_3d-1.png", alt: "Awaken Your Genius" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 196,
+        lineNumber: 261,
         columnNumber: 13
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 195,
+        lineNumber: 260,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "book-content", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "book-label", children: "my latest book" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 199,
+          lineNumber: 264,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", { className: "book-title", children: "Awaken Your Genius" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 200,
+          lineNumber: 265,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "book-description", children: [
           "From the acclaimed author of ",
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("i", { children: "Think Like a Rocket Scientist" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 202,
+            lineNumber: 267,
             columnNumber: 44
           }, this),
           " comes a simple guide to unlock your originality and unleash your unique talents."
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 201,
+          lineNumber: 266,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "book-buttons", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "https://geni.us/6uDnAm", target: "_blank", className: "btn-primary", children: "order now \u2192" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 205,
+            lineNumber: 270,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/awaken", className: "btn-secondary", children: "learn more \u2192" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 206,
+            lineNumber: 271,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 204,
+          lineNumber: 269,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "book-praise", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "praise-icon", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(QuoteIcon, {}, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 210,
+            lineNumber: 275,
             columnNumber: 17
           }, this) }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 209,
+            lineNumber: 274,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "praise-content", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h4", { className: "praise-label", children: "PRAISE FOR" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 213,
+              lineNumber: 278,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h5", { className: "praise-book", children: "Awaken Your Genius:" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 214,
+              lineNumber: 279,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "praise-text", children: "Ozan Varol always makes me think. His new book is laced with surprising stories and fascinating findings to help you rethink what you're capable of." }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 215,
+              lineNumber: 280,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "praise-author", children: "\u2014 ADAM GRANT" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 216,
+              lineNumber: 281,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "praise-title", children: "New York Times bestselling author of ORIGINALS and GIVE AND TAKE, and host of the TED podcast WorkLife" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 217,
+              lineNumber: 282,
               columnNumber: 17
             }, this)
           ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 212,
+            lineNumber: 277,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "praise-badge", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/J-w35fhaQKGqr4HdnlyAug/260793/adam-grant-photo.png", alt: "Adam Grant", className: "praise-photo" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 220,
+              lineNumber: 285,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "badge-content", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "badge-source", children: "Wall Street Journal" }, void 0, false, {
                 fileName: "app/routes/_index.tsx",
-                lineNumber: 222,
+                lineNumber: 287,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "badge-type", children: "Best Seller" }, void 0, false, {
                 fileName: "app/routes/_index.tsx",
-                lineNumber: 223,
+                lineNumber: 288,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "badge-rank", children: "#3" }, void 0, false, {
                 fileName: "app/routes/_index.tsx",
-                lineNumber: 224,
+                lineNumber: 289,
                 columnNumber: 19
               }, this)
             ] }, void 0, true, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 221,
+              lineNumber: 286,
               columnNumber: 17
             }, this)
           ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 219,
+            lineNumber: 284,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 208,
+          lineNumber: 273,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 198,
+        lineNumber: 263,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 194,
+      lineNumber: 259,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 193,
+      lineNumber: 258,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "blog", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "blog-container", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "blog-content", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "/blog", className: "blog-label", children: "recently on the blog:" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 236,
+          lineNumber: 301,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "https://ozanvarol.com/a-trap-disguised-as-wisdom/", target: "_blank", className: "blog-title", children: "A Trap Disguised as Wisdom" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 237,
+          lineNumber: 302,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "blog-arrow", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("svg", { "data-name": "Layer 1", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 38 22.07", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", { d: "M37.85 10.61 28 .19a.63.63 0 0 0-.87 0 .65.65 0 0 0 0 .87L36 10.42H.61a.61.61 0 0 0 0 1.22H36L27.14 21a.63.63 0 0 0 0 .87.62.62 0 0 0 .87 0l9.81-10.42a.66.66 0 0 0 0-.84Z" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 240,
+          lineNumber: 305,
           columnNumber: 17
         }, this) }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 239,
+          lineNumber: 304,
           columnNumber: 15
         }, this) }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 238,
+          lineNumber: 303,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 235,
+        lineNumber: 300,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "blog-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/800/pqeYF6WVQXyweWNacR2ZwA/260793/52175273144_209943c6ea_o.jpg", alt: "Ozan Varol speaker" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 245,
+        lineNumber: 310,
         columnNumber: 13
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 244,
+        lineNumber: 309,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 234,
+      lineNumber: 299,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 233,
+      lineNumber: 298,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "testimonials", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonials-container", children: [
@@ -711,127 +871,127 @@ function Index() {
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-content", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-icon", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(QuoteIcon, {}, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 256,
+            lineNumber: 321,
             columnNumber: 17
           }, this) }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 255,
+            lineNumber: 320,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "testimonial-text", children: [
             "Ozan Varol\xA0is\xA0always\xA0smart\xA0and\xA0always",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 258,
+              lineNumber: 323,
               columnNumber: 111
             }, this),
             "fascinating."
           ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 258,
+            lineNumber: 323,
             columnNumber: 16
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "testimonial-author", children: "\u2014SUSAN CAIN" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 259,
+            lineNumber: 324,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "testimonial-title", children: [
             "Bestselling author of ",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("i", { children: "Bittersweet" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 260,
+              lineNumber: 325,
               columnNumber: 70
             }, this),
             " and ",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("i", { children: "Quiet" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 260,
+              lineNumber: 325,
               columnNumber: 93
             }, this)
           ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 260,
+            lineNumber: 325,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 254,
+          lineNumber: 319,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/400/WqI8LJ8mQc-n_QvfzCCV6g/260793/susan-cain-dec-2021-credit-aaron-fedor-sus_2702a_crop.png", alt: "Susan Cain" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 263,
+          lineNumber: 328,
           columnNumber: 15
         }, this) }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 262,
+          lineNumber: 327,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 253,
+        lineNumber: 318,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-item alt frame-yellow", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/hMVCmqe8ScKxvOWkrE1bxg/260793/dan_pink.jpg", alt: "Dan Pink" }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 269,
+          lineNumber: 334,
           columnNumber: 15
         }, this) }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 268,
+          lineNumber: 333,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-content", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "testimonial-icon", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(QuoteIcon, {}, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 273,
+            lineNumber: 338,
             columnNumber: 17
           }, this) }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 272,
+            lineNumber: 337,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "testimonial-text", children: "When the stakes are high, the unknowns are threatening, and the problems seem insurmountable, you need a superhero\u2014which means you need Ozan Varol." }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 275,
+            lineNumber: 340,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "testimonial-author", children: "\u2014 DAN PINK" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 276,
+            lineNumber: 341,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "testimonial-title", children: [
             "New York Times\u2013bestselling author of ",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("i", { children: "Drive" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 277,
+              lineNumber: 342,
               columnNumber: 85
             }, this)
           ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 277,
+            lineNumber: 342,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 271,
+          lineNumber: 336,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 267,
+        lineNumber: 332,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 252,
+      lineNumber: 317,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 251,
+      lineNumber: 316,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("section", { className: "quote-banner", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-container", children: [
@@ -840,81 +1000,81 @@ function Index() {
           "If you looked up the word 'polymath' in the dictionary, you may see a picture of Ozan",
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 288,
+            lineNumber: 353,
             columnNumber: 100
           }, this),
           "Varol."
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 287,
+          lineNumber: 352,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-author", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "quote-banner-name", children: "\u2014 NIR EYAL" }, void 0, false, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 291,
+            lineNumber: 356,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "quote-banner-title", children: [
             "Bestselling author of ",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("i", { children: "Hooked and Indistractable" }, void 0, false, {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 292,
+              lineNumber: 357,
               columnNumber: 71
             }, this)
           ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
-            lineNumber: 292,
+            lineNumber: 357,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 290,
+          lineNumber: 355,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-icon", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(QuoteIcon, {}, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 295,
+          lineNumber: 360,
           columnNumber: 15
         }, this) }, void 0, false, {
           fileName: "app/routes/_index.tsx",
-          lineNumber: 294,
+          lineNumber: 359,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 286,
+        lineNumber: 351,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-right", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "quote-banner-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { src: "https://static.showit.co/200/SrQb7ryXRy6FUcnmZiSfBg/260793/nireyal_150-scaled.jpg", alt: "Nir Eyal" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 300,
+        lineNumber: 365,
         columnNumber: 15
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 299,
+        lineNumber: 364,
         columnNumber: 13
       }, this) }, void 0, false, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 298,
+        lineNumber: 363,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 285,
+      lineNumber: 350,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 284,
+      lineNumber: 349,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 59,
+    lineNumber: 132,
     columnNumber: 10
   }, this);
 }
-_s(Index, "3ubReDTFssvu4DHeldAg55cW/CI=");
+_s(Index, "0cIHaRPT5AsNp+tu70IQfhS7pBY=");
 _c = Index;
 var _c;
 $RefreshReg$(_c, "Index");
@@ -924,4 +1084,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-EA6AQQWT.js.map
+//# sourceMappingURL=/build/routes/_index-V67VZMYY.js.map

@@ -28,6 +28,88 @@ export default function Index() {
   }, []);
 
   useEffect(() => {
+    // About image slider (3 images auto-rotate with dots)
+    const gallery = document.querySelector(".about-gallery");
+    if (!gallery) return;
+
+    const slides = gallery.querySelectorAll("img");
+    const dotsWrap = document.querySelector(".about-dots");
+    let current = 0;
+    let timer: ReturnType<typeof setInterval> | null = null;
+
+    // Build dots
+    if (dotsWrap && slides.length) {
+      slides.forEach((_, i) => {
+        const btn = document.createElement("button");
+        btn.setAttribute("aria-label", "Slide " + (i + 1));
+        if (i === 0) btn.classList.add("active");
+        btn.addEventListener("click", () => {
+          goTo(i);
+          restart();
+        });
+        dotsWrap.appendChild(btn);
+      });
+    }
+
+    function goTo(index: number) {
+      slides.forEach((s, i) => s.classList.toggle("active", i === index));
+      if (dotsWrap) {
+        dotsWrap.querySelectorAll("button").forEach((b, i) => {
+          b.classList.toggle("active", i === index);
+        });
+      }
+      current = index;
+    }
+
+    function next() {
+      goTo((current + 1) % slides.length);
+    }
+
+    function start() {
+      timer = setInterval(next, 5000);
+    }
+    function stop() {
+      if (timer) clearInterval(timer);
+    }
+    function restart() {
+      stop();
+      start();
+    }
+
+    if (slides.length > 1) {
+      goTo(0);
+      start();
+      gallery.addEventListener("mouseenter", stop);
+      gallery.addEventListener("mouseleave", start);
+    }
+
+    return () => {
+      if (timer) clearInterval(timer);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Fade-in animation using IntersectionObserver
+    const fadeEls = document.querySelectorAll(".fade-in");
+    if ("IntersectionObserver" in window && fadeEls.length) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      fadeEls.forEach((el) => io.observe(el));
+    } else {
+      fadeEls.forEach((el) => el.classList.add("visible"));
+    }
+  }, []);
+
+  useEffect(() => {
     // Check if script already exists to avoid duplicates
     const container = document.getElementById("hero-convertkit-form");
     if (!container) return;
@@ -82,31 +164,39 @@ export default function Index() {
       {/* About Section */}
       <section className="about">
         <div className="about-container">
-          <div className="about-image">
-            <div className="about-gallery">
-              <img src="https://static.showit.co/400/vjojJALxToO9k6fCfUVsJg/260793/ozan_1503.jpg" alt="Ozan Varol" />
-            </div>
-          </div>
           <div className="about-content">
-            <h1 className="about-title">Hey, I'm Ozan</h1>
-            <h2 className="about-subtitle">I'M A ROCKET SCIENTIST TURNED BESTSELLING AUTHOR</h2>
-            <p className="about-text">
-              I've spent my career building things and then walking away from them — rocket science, law, a tenured professorship — each time following the energy toward what was next.
-            </p>
-            <p className="about-text">
-              Now I write, speak, and teach about the moments that define us: the leaps we almost don't take, the things we hold onto too long, and the breakthroughs that only happen when we stop playing it safe.
-            </p>
-            <p className="about-text">
-              My books have been translated into 25+ languages and selected by Adam Grant as his #1 leadership book of the year. I've delivered 100+ keynotes to organizations like Microsoft, Google X, Salesforce, Goldman Sachs, and the U.S. Department of State.
-            </p>
+            <p className="about-eyebrow">I'M OZAN VAROL</p>
+            <h1 className="about-subtitle">a ROCKET SCIENTIST TURNED BESTSELLING<br />AUTHOR</h1>
+            <p className="about-text fade-in">I've spent my career building things and then walking away from them — rocket science, law, a tenured professorship — each time following the energy toward what was next.<br /><br />Now I write, speak, and teach about the moments that define us: the leaps we almost don't take, the things we hold onto too long, and the breakthroughs that only happen when we stop playing it safe.<br /><br />My books have been translated into 25+ languages and selected by Adam Grant as his #1 leadership book of the year. I've delivered 100+ keynotes to organizations like Microsoft, Google X, Salesforce, Goldman Sachs, and the U.S. Department of State.</p>
+          </div>
+          <div className="about-gallery-wrap">
+            <div className="about-gallery">
+              <img className="active" src="https://static.showit.co/400/vjojJALxToO9k6fCfUVsJg/260793/ozan_1503.jpg" alt="Ozan Varol" />
+              <img src="https://static.showit.co/400/ZAImgYHOQ66OsMvVCbdujQ/260793/ozan_1379.jpg" alt="Ozan Varol" />
+              <img src="https://static.showit.co/400/hHPLAClLRzmHLoI_pKMhZQ/260793/ozan_1515.jpg" alt="Ozan Varol" />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Quote Section */}
       <section className="quote-section">
+        <div className="quote-bg-top"></div>
+        <div className="quote-bg-bottom"></div>
         <div className="quote-container">
-          <h3 className="quote-text">Most people hold on too long. I've built my life around letting go.</h3>
+          <div className="quote-images">
+            <div className="quote-image-original">
+              <img src="/image_2.png" alt="Original" />
+            </div>
+            <div className="quote-image-yellow" aria-hidden="true"></div>
+          </div>
+          <div className="quote-card">
+            <h3 className="quote-text">Most people hold<br />on too long. I've<br />built my life<br />around letting go.</h3>
+            <button className="quote-btn">
+              COUNT ME IN!
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -127,22 +217,6 @@ export default function Index() {
               <button type="submit" className="audio-btn">DOWNLOAD</button>
             </form>
           </div>
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section className="mission-section">
-        <div className="container">
-          <h2 className="mission-title">The next chapter starts when you close this one.</h2>
-          <p className="mission-text">
-            Every ending is a beginning in disguise. The moment you let go of what's familiar—whether it's a job, a relationship, or an old version of yourself—you create space for something new to emerge.
-          </p>
-          <p className="mission-text">
-            This is the art of strategic surrender. It's not about giving up; it's about giving way to what's trying to happen. The most successful people aren't those who hold on the tightest, but those who know when to release.
-          </p>
-          <p className="mission-text">
-            I help people and organizations make this transition—from the known to the unknown, from the comfortable to the transformative. Because the best view comes after the hardest climb.
-          </p>
         </div>
       </section>
 

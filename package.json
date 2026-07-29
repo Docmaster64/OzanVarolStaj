@@ -7,9 +7,11 @@
     "dev": "remix dev",
     "build": "remix build",
     "start": "remix-serve ./build/server/index.js",
-    "lint": "eslint --ignore-path .gitignore --no-error-on-unmatched-pattern -c eslint -d ."
+    "lint": "eslint --ignore-path .gitignore --no-error-on-unmatched-pattern -c eslint -d .",
+    "pages:deploy": "npm run build && wrangler pages deploy ./public"
   },
   "dependencies": {
+    "@remix-run/cloudflare-pages": "^2.17.5",
     "@remix-run/node": "^2.0.0",
     "@remix-run/react": "^2.0.0",
     "@remix-run/serve": "^2.0.0",

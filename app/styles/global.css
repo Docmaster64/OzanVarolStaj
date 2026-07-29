@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grotesk:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap');
@@ -441,12 +441,13 @@ img {
 .speaking-quote { position: absolute; max-width: 280px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 12px; border-radius: 12px; border: 2px solid var(--color-orange); pointer-events: auto; }
 .speaking-quote-top-left { top: 40px; left: 40px; }
 .speaking-quote-bottom-right { bottom: 40px; right: 40px; }
-.speaking-quote-text { font-size: 19px; color: var(--color-white); line-height: 1.4; margin-bottom: 4px; font-family: 'Saira', 'Eurostile', 'Microgramma', sans-serif; font-weight: 800; font-stretch: 150%; text-transform: uppercase; letter-spacing: 0; transform: scaleY(0.8); transform-origin: left center; }
-.speaking-quote-author { font-size: 10px; color: var(--color-white); font-weight: 700; font-style: normal; text-transform: uppercase; letter-spacing: 0.1em; }
+.speaking-quote-text { font-size: 24px; color: var(--color-white); line-height: 1.4; margin-bottom: 6px; font-family: 'Saira', 'Eurostile', 'Microgramma', sans-serif; font-weight: 800; font-stretch: 150%; text-transform: uppercase; letter-spacing: 0; transform: scaleY(0.8); transform-origin: left center; text-align: left; padding-left: 18px; }
+.speaking-quote-author { font-size: 12px; color: var(--color-white); font-weight: 700; font-style: normal; text-transform: uppercase; letter-spacing: 0.1em; text-align: right; padding-right: 6px; }
+.speaking-quote-icon { position: absolute; top: 0px; left: 2px; width: 56px; height: 56px; color: #ede0c8; opacity: 0.8; }
 .speaking-center-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 3; }
-.speaking-center-title { font-size: clamp(60px, 12vw, 180px); color: var(--color-yellow); font-family: 'Canela Medium', Georgia, serif; line-height: 0.9; margin-bottom: 30px; letter-spacing: -0.02em; }
-.speaking-center-btn { display: inline-block; color: var(--color-black); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 18px 36px; background: var(--color-yellow); border-radius: 50px; text-decoration: none; transition: all 0.3s ease; pointer-events: auto; }
-.speaking-center-btn:hover { background: #f5d77a; transform: translateY(-2px); }
+.speaking-center-title { font-size: clamp(54px, 10.5vw, 160px); color: var(--color-yellow); font-family: 'Canela Medium', Georgia, serif; line-height: 0.9; margin-bottom: 30px; letter-spacing: -0.02em; }
+.speaking-center-btn { display: inline-block; color: var(--color-black); font-size: 15px; font-weight: 700; font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; padding: 18px 50px; margin-top: 20px; background: var(--color-yellow); border-radius: 50px; text-decoration: none; transition: all 0.3s ease; pointer-events: auto; transform: scaleY(0.92); }
+.speaking-center-btn:hover { background: #f5d77a; transform: translateY(-2px) scaleY(0.92); }
 
 /* Testimonials Section */
 .testimonials { background: var(--color-white); padding: 120px 20px 100px; position: relative; z-index: 1; }

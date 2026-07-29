@@ -200,6 +200,29 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Speaking Section - fixed video background, empty spacer */}
+      <section className="speaking">
+        <div className="speaking-video-background">
+          <video autoPlay muted loop playsInline>
+            <source src="https://static.showit.co/file/WQOtPRx3cWRyVNQq2q-txA/260793/speakingclip.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className="speaking-overlay">
+          <div className="speaking-quote speaking-quote-top-left">
+            <p className="speaking-quote-text">The Best Keynote Speaker.</p>
+            <p className="speaking-quote-author">— Heather Hoerle</p>
+          </div>
+          <div className="speaking-center-content">
+            <h3 className="speaking-center-title">KEYNOTE SPEAKING</h3>
+            <a href="/speaking" className="speaking-center-btn">LEARN MORE &rarr;</a>
+          </div>
+          <div className="speaking-quote speaking-quote-bottom-right">
+            <p className="speaking-quote-text">Among the Top 3 Speakers I've ever encountered in my life.</p>
+            <p className="speaking-quote-author">— Katherine Cohen</p>
+          </div>
+        </div>
+      </section>
+
       {/* Audio Training Section */}
       <section className="audio">
         <div className="audio-container">
@@ -216,34 +239,6 @@ export default function Index() {
               <input type="email" placeholder="Email Address" required />
               <button type="submit" className="audio-btn">DOWNLOAD</button>
             </form>
-          </div>
-        </div>
-      </section>
-
-      {/* Speaking Section */}
-      <section className="speaking">
-        <div className="speaking-video-background">
-          <video autoPlay muted loop playsInline>
-            <source src="https://static.showit.co/file/WQOtPRx3cWRyVNQq2q-txA/260793/speakingclip.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div className="speaking-container">
-          <div className="speaking-content">
-            <h3 className="speaking-title">KEYNOTE SPEAKING</h3>
-            <div className="speaking-badge">
-              <h4 className="speaking-badge-title">the best keynote speaker.</h4>
-              <p className="speaking-badge-author">— Heather Hoerle</p>
-            </div>
-            <div className="speaking-testimonial">
-              <div className="testimonial-icon">
-                <QuoteIcon />
-              </div>
-              <div className="testimonial-content">
-                <h4 className="testimonial-text">AMONG THE TOP 3 SPEAKERS I'VE EVER ENCOUNTERED IN MY LIFE.</h4>
-                <p className="testimonial-author">—KATHERINE COHEN</p>
-              </div>
-            </div>
-            <a href="/speaking" className="btn-link">learn more &rarr;</a>
           </div>
         </div>
       </section>

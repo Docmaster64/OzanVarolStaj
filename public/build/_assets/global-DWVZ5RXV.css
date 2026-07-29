@@ -1,6 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Grotesk:wght@400;500;600;700;800&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;800&display=swap";
 
 /* app/styles/global.css */
 * {
@@ -418,6 +419,7 @@ img {
   align-items: flex-start;
   padding: 60px 20px;
   position: relative;
+  z-index: 1;
   overflow: visible;
 }
 .hero-container {
@@ -579,6 +581,7 @@ img {
   background: var(--color-orange);
   padding: 100px 20px;
   position: relative;
+  z-index: 1;
 }
 .about-container {
   max-width: 1400px;
@@ -676,6 +679,7 @@ img {
   position: relative;
   padding: 120px 20px;
   overflow: hidden;
+  z-index: 1;
 }
 .quote-bg-top {
   position: absolute;
@@ -742,10 +746,10 @@ img {
   position: relative;
   z-index: 1;
   background: var(--color-white);
-  padding: 70px;
+  padding: 70px 70px 70px 220px;
   box-shadow: 0 20px 60px #00000026;
-  margin-left: -60px;
-  width: 700px;
+  margin-left: -210px;
+  width: 770px;
 }
 .quote-text {
   font-size: clamp(32px, 4vw, 52px);
@@ -784,12 +788,101 @@ img {
 }
 .speaking {
   position: relative;
-  padding: 100px 20px;
-  overflow: hidden;
+  padding: 0;
+  min-height: 100vh;
+  background: transparent;
+}
+.speaking-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.speaking-quote {
+  position: absolute;
+  max-width: 280px;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid var(--color-orange);
+  pointer-events: auto;
+}
+.speaking-quote-top-left {
+  top: 40px;
+  left: 40px;
+}
+.speaking-quote-bottom-right {
+  bottom: 40px;
+  right: 40px;
+}
+.speaking-quote-text {
+  font-size: 19px;
+  color: var(--color-white);
+  line-height: 1.4;
+  margin-bottom: 4px;
+  font-family:
+    Saira,
+    Eurostile,
+    Microgramma,
+    sans-serif;
+  font-weight: 800;
+  font-stretch: 150%;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  transform: scaleY(.8);
+  transform-origin: left center;
+}
+.speaking-quote-author {
+  font-size: 10px;
+  color: var(--color-white);
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.speaking-center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+.speaking-center-title {
+  font-size: clamp(60px, 12vw, 180px);
+  color: var(--color-yellow);
+  font-family:
+    Canela Medium,
+    Georgia,
+    serif;
+  line-height: .9;
+  margin-bottom: 30px;
+  letter-spacing: -.02em;
+}
+.speaking-center-btn {
+  display: inline-block;
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: 18px 36px;
+  background: var(--color-yellow);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all .3s ease;
+  pointer-events: auto;
+}
+.speaking-center-btn:hover {
+  background: #f5d77a;
+  transform: translateY(-2px);
 }
 .testimonials {
   background: var(--color-white);
   padding: 120px 20px 100px;
+  position: relative;
+  z-index: 1;
 }
 .testimonials-container {
   max-width: 1200px;
@@ -955,11 +1048,11 @@ img {
   border-color: var(--color-orange);
 }
 .speaking-video-background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 0;
   overflow: hidden;
 }
@@ -1060,6 +1153,8 @@ img {
 .book {
   background: var(--color-white);
   padding: 100px 20px;
+  position: relative;
+  z-index: 1;
 }
 .book-container {
   max-width: 1200px;
@@ -1217,6 +1312,8 @@ img {
 .blog {
   background: var(--color-white);
   padding: 100px 20px;
+  position: relative;
+  z-index: 1;
 }
 .blog-container {
   max-width: 1200px;
@@ -1253,6 +1350,8 @@ img {
 .audio {
   background: var(--color-orange);
   padding: 100px 20px;
+  position: relative;
+  z-index: 1;
 }
 .audio-container {
   max-width: 1200px;
@@ -1424,7 +1523,7 @@ img {
   background: var(--color-white);
   padding: 100px 20px 150px;
   position: relative;
-  z-index: 0;
+  z-index: 1;
   margin-top: -45px;
   margin-bottom: 40px;
 }
@@ -1515,6 +1614,7 @@ img {
   border-top: 1.2cm solid var(--color-blue);
   padding: 50px 0 400px;
   position: relative;
+  z-index: 1;
   overflow: hidden;
   margin-top: -40px;
 }

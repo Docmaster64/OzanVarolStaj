@@ -197,6 +197,14 @@ export default function Index() {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </button>
           </div>
+          {/* Gray copy of the quote card, positioned upper-right */}
+          <div className="quote-card quote-card-copy" aria-hidden="true">
+            <h3 className="quote-text">Most people hold<br />on too long. I've<br />built my life<br />around letting go.</h3>
+            <button className="quote-btn">
+              COUNT ME IN!
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
         </div>
       </section>
 

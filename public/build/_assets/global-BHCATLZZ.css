@@ -786,6 +786,27 @@ img {
   width: 20px;
   height: 20px;
 }
+.quote-card-copy {
+  position: absolute;
+  bottom: 120px;
+  left: 535px;
+  z-index: 0;
+  background: #b9c9b8;
+  box-shadow: none;
+  opacity: .85;
+  pointer-events: none;
+}
+.quote-card-copy .quote-text {
+  color: #b9c9b8;
+}
+.quote-card-copy .quote-btn {
+  background: #b9c9b8;
+  color: #b9c9b8;
+}
+.quote-card-copy .quote-btn:hover {
+  background: #b9c9b8;
+  transform: none;
+}
 .speaking {
   position: relative;
   padding: 0;

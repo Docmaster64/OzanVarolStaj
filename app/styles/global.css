@@ -420,6 +420,21 @@ img {
 .quote-btn:hover { background: #f5d77a; transform: translateY(-2px); }
 .quote-btn svg { width: 20px; height: 20px; }
 
+/* Gray copy of the quote card, positioned lower-left */
+.quote-card-copy {
+  position: absolute;
+  bottom: 120px;
+  left: 535px;
+  z-index: 0;
+  background: #b9c9b8;
+  box-shadow: none;
+  opacity: 0.85;
+  pointer-events: none;
+}
+.quote-card-copy .quote-text { color: #b9c9b8; }
+.quote-card-copy .quote-btn { background: #b9c9b8; color: #b9c9b8; }
+.quote-card-copy .quote-btn:hover { background: #b9c9b8; transform: none; }
+
 /* Speaking Section (home) - empty spacer with fixed video background */
 .speaking { position: relative; padding: 0; min-height: 100vh; background: transparent; }
 .speaking-overlay { position: absolute; inset: 0; z-index: 2; pointer-events: none; }

@@ -504,7 +504,7 @@ img {
 .book-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 80px; align-items: start; }
 .book-image-col { position: relative; display: flex; align-items: center; justify-content: center; padding-top: 20px; }
 .book-image-wrap { position: relative; display: inline-block; padding: 30px; }
-.book-image-wrap::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 8px solid #0a6ce4; pointer-events: none; z-index: 0; }
+.book-image-wrap::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 120px; border: 8px solid #0a6ce4; pointer-events: none; z-index: 0; }
 .book-image-wrap img { position: relative; z-index: 1; display: block; max-height: 560px; width: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3)); }
 .book-content-col { color: var(--color-black); padding-top: 140px; margin-left: -30px; }
 .book-label { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-black); margin-bottom: 16px; transform: scaleX(1.4); transform-origin: left center; }
@@ -512,22 +512,27 @@ img {
 .book-description { font-size: 23px; line-height: 1.7; margin-bottom: 30px; color: var(--color-black); font-weight: 400; max-width: 520px; }
 .book-buttons { display: flex; gap: 15px; margin-bottom: 50px; }
 
-.book-praise-section { display: flex; gap: 60px; align-items: flex-start; margin-top: 50px; padding-top: 40px; border-top: 1px solid #e0e0e0; }
-.praise-left { flex: 1; position: relative; padding-left: 70px; }
-.praise-icon { position: absolute; top: 0; left: 0; }
-.praise-icon svg { width: 60px; height: 60px; fill: #0a6ce4; opacity: 0.9; }
-.praise-label { font-size: 14px; text-transform: uppercase; letter-spacing: 0.15em; color: #0a6ce4; margin-bottom: 15px; font-weight: 700; font-family: 'Inter', sans-serif; }
-.praise-text { font-size: 17px; font-style: italic; margin-bottom: 15px; color: var(--color-black); line-height: 1.6; }
-.praise-author-row { display: flex; align-items: center; gap: 15px; margin-top: 15px; }
-.praise-photo { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
-.praise-author { font-weight: 700; color: var(--color-black); margin-bottom: 2px; font-size: 14px; }
-.praise-title { font-size: 12px; color: #666; line-height: 1.3; }
-.praise-right { flex-shrink: 0; }
-.praise-badge { background: var(--color-yellow); padding: 25px; border-radius: 50%; width: 180px; height: 180px; display: flex; align-items: center; justify-content: center; text-align: center; transform: rotate(-8deg); position: relative; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
-.badge-content { display: flex; flex-direction: column; gap: 2px; }
-.badge-rank { font-size: 48px; font-weight: 900; color: var(--color-black); line-height: 0.9; font-family: 'Canela Medium', Georgia, serif; }
-.badge-source { font-size: 16px; font-weight: 800; color: var(--color-black); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.02em; }
-.badge-type { font-size: 11px; font-weight: 800; color: var(--color-black); text-transform: uppercase; letter-spacing: 0.15em; margin-top: 4px; }
+.book-praise-section { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start; margin-top: 40px; padding-top: 30px; border-top: 1px solid #e0e0e0; background: #ffffff; }
+.praise-left { position: relative; padding-left: 0; margin-left: -600px; }
+.praise-icon { display: none; }
+.praise-right { justify-self: end; }
+.praise-icon svg { width: 100px; height: 100px; fill: none; stroke: #0a6ce4; stroke-width: 6; opacity: 1; }
+.praise-label { font-size: 13px; text-transform: uppercase; letter-spacing: 0.2em; color: #0a6ce4; margin-bottom: 20px; font-weight: 700; font-family: 'Inter', sans-serif; }
+.praise-label i { font-family: 'Canela Medium', Georgia, serif; font-style: italic; text-decoration: underline; text-underline-offset: 3px; }
+.praise-text { font-size: 17px; font-style: normal; margin-bottom: 20px; color: var(--color-black); line-height: 1.6; }
+.praise-author-row { display: flex; align-items: center; gap: 10px; margin-top: 20px; }
+.praise-author-row > div { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.praise-author-row > div .praise-author { margin-bottom: 0 !important; }
+.praise-photo { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
+.praise-author { display: inline; font-weight: 700; color: var(--color-black); font-size: 14px; margin: 0; }
+.praise-title { display: inline; font-size: 12px; color: #666; line-height: 1.4; margin: 0; }
+.praise-right { flex-shrink: 0; align-self: flex-start; margin-top: 10px; }
+.praise-badge { display: contents; }
+.badge-content { display: flex; flex-direction: row; align-items: center; gap: 10px; }
+.badge-rank { font-size: 72px; font-weight: 900; font-style: normal; color: var(--color-black); line-height: 1; font-family: 'Canela Medium', Georgia, serif; }
+.badge-info { display: flex; flex-direction: column; gap: 6px; }
+.badge-source { font-size: 24px; font-weight: 800; color: var(--color-black); line-height: 1.2; text-transform: uppercase; letter-spacing: 0.02em; }
+.badge-type { font-size: 16px; font-weight: 800; color: var(--color-black); text-transform: uppercase; letter-spacing: 0.15em; }
 
 /* Marquee Section */
 .marquee { background: var(--color-orange); padding: 20px 0; overflow: hidden; }
@@ -559,7 +564,7 @@ img {
 }
 
 /* Blog Section (home) */
-.blog { background: var(--color-white); padding: 100px 20px; position: relative; z-index: 1; }
+.blog { background: var(--color-blue); padding: 100px 20px; position: relative; z-index: 1; }
 .blog-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .blog-content { display: flex; flex-direction: column; gap: 20px; }
 .blog-label { font-size: 14px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--color-blue); }
@@ -757,7 +762,7 @@ img {
 .book-features { margin: 20px 0; padding-left: 20px; }
 .book-features li { font-size: 16px; line-height: 1.8; }
 .book-purchase-options { display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
-.book-praise-section { padding: 100px 20px; background: var(--color-gray); }
+.book-praise-section { padding: 100px 20px; background: #ffffff; }
 .book-detail.alt + .book-praise-section { background: var(--color-white); }
 .praise-section-title { font-size: 36px; text-align: center; margin-bottom: 50px; }
 .praise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }

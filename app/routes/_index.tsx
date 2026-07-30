@@ -256,36 +256,43 @@ export default function Index() {
       {/* Book Section */}
       <section className="book">
         <div className="book-container">
-          <div className="book-image">
-            <img src="https://static.showit.co/800/U9qXHFfiSBic8gCLv49PnQ/260793/awakenyourgenius_3d-1.png" alt="Awaken Your Genius" />
+          <div className="book-image-col">
+            <div className="book-image-wrap">
+              <img src="https://static.showit.co/800/U9qXHFfiSBic8gCLv49PnQ/260793/awakenyourgenius_3d-1.png" alt="Awaken Your Genius" />
+            </div>
           </div>
-          <div className="book-content">
-            <h3 className="book-label">my latest book</h3>
-            <h2 className="book-title">Awaken Your Genius</h2>
+          <div className="book-content-col">
+            <h3 className="book-label">MY LATEST BOOK</h3>
+            <h2 className="book-title">Awaken<br />Your Genius</h2>
             <p className="book-description">
               From the acclaimed author of <i>Think Like a Rocket Scientist</i> comes a simple guide to unlock your originality and unleash your unique talents.
             </p>
             <div className="book-buttons">
-              <a href="https://geni.us/6uDnAm" target="_blank" className="btn-primary">order now &rarr;</a>
-              <a href="/awaken" className="btn-secondary">learn more &rarr;</a>
+              <a href="https://geni.us/6uDnAm" target="_blank" className="book-btn-primary">ORDER NOW &rarr;</a>
+              <a href="/awaken" className="book-btn-secondary">LEARN MORE &rarr;</a>
             </div>
-            <div className="book-praise">
-              <div className="praise-icon">
-                <QuoteIcon />
+            <div className="book-praise-section">
+              <div className="praise-left">
+                <div className="praise-quote-icon">
+                  <svg viewBox="0 0 512 512" fill="currentColor"><path d="M220.59,105.05Q156.8,149,136.25,188T115.7,259.54v17a30.9,30.9,0,0,0,1.42,9.92q11.32-9.9,24.09-12.75a106.6,106.6,0,0,1,22.68-2.84q31.16,0,53.86,20.55t22.68,53.16q0,38.27-25.51,60.94t-56.7,22.68a100.94,100.94,0,0,1-72.29-31.89Q70.33,380,60.42,355.93T50.5,297.81q0-35.42,12.76-65.91a245.53,245.53,0,0,1,34-57.4,324.89,324.89,0,0,1,48.9-49.61A470.25,470.25,0,0,1,205,83.79Zm221.07,0Q377.88,149,357.32,188t-20.55,71.57v17a30.9,30.9,0,0,0,1.42,9.92q11.32-9.9,24.09-12.75A106.6,106.6,0,0,1,385,270.88q31.16,0,53.86,20.55t22.68,53.16q0,38.27-25.51,60.94t-56.7,22.68A100.94,100.94,0,0,1,307,396.32Q291.4,380,281.49,355.93t-9.92-58.12q0-35.42,12.76-65.91a245.53,245.53,0,0,1,34-57.4,324.89,324.89,0,0,1,48.9-49.61,469.62,469.62,0,0,1,58.83-41.1Z"></path></svg>
+                </div>
+                <h4 className="praise-label">PRAISE FOR <i>Awaken Your Genius:</i></h4>
+                <p className="praise-text">"Ozan Varol always makes me think. His new book is laced with surprising stories and fascinating findings to help you rethink what you're capable of."</p>
+                <div className="praise-author-row">
+                  <img src="https://static.showit.co/200/J-w35fhaQKGqr4HdnlyAug/260793/adam-grant-photo.png" alt="Adam Grant" className="praise-photo" />
+                  <div>
+                    <p className="praise-author">— ADAM GRANT</p>
+                    <p className="praise-title">New York Times bestselling author of ORIGINALS and GIVE AND TAKE, and host of the TED podcast WorkLife</p>
+                  </div>
+                </div>
               </div>
-              <div className="praise-content">
-                <h4 className="praise-label">PRAISE FOR</h4>
-                <h5 className="praise-book">Awaken Your Genius:</h5>
-                <p className="praise-text">Ozan Varol always makes me think. His new book is laced with surprising stories and fascinating findings to help you rethink what you're capable of.</p>
-                <p className="praise-author">— ADAM GRANT</p>
-                <p className="praise-title">New York Times bestselling author of ORIGINALS and GIVE AND TAKE, and host of the TED podcast WorkLife</p>
-              </div>
-              <div className="praise-badge">
-                <img src="https://static.showit.co/200/J-w35fhaQKGqr4HdnlyAug/260793/adam-grant-photo.png" alt="Adam Grant" className="praise-photo" />
-                <div className="badge-content">
-                  <span className="badge-source">Wall Street Journal</span>
-                  <span className="badge-type">Best Seller</span>
-                  <span className="badge-rank">#3</span>
+              <div className="praise-right">
+                <div className="praise-badge">
+                  <div className="badge-content">
+                    <span className="badge-rank">#3</span>
+                    <span className="badge-source">Wall Street<br />Journal</span>
+                    <span className="badge-type">BEST SELLER</span>
+                  </div>
                 </div>
               </div>
             </div>

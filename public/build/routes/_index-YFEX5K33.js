@@ -36,7 +36,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\_index.tsx"
   );
-  import.meta.hot.lastModified = "1785342155873.7925";
+  import.meta.hot.lastModified = "1785394560444.644";
 }
 var meta = () => [{
   title: "Home | #1 Bestselling Author, Keynote Speaker & Expert on Innovation & Creativity"
@@ -589,7 +589,15 @@ function Index() {
             lineNumber: 226,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "speaking-quote-text", children: "The Best Keynote Speaker." }, void 0, false, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "speaking-quote-text", children: [
+            "The Best Keynote",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 227,
+              columnNumber: 64
+            }, this),
+            "Speaker."
+          ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
             lineNumber: 227,
             columnNumber: 13
@@ -631,29 +639,17 @@ function Index() {
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "speaking-quote-text", children: [
-            "Among the Top 3",
+            "Among the Top 3 SPEAKERS",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
               fileName: "app/routes/_index.tsx",
               lineNumber: 236,
-              columnNumber: 63
+              columnNumber: 72
             }, this),
-            "SPEAKERS",
+            "I'VE EVER ENCOUNTERED IN",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
               fileName: "app/routes/_index.tsx",
               lineNumber: 236,
-              columnNumber: 77
-            }, this),
-            "I'VE EVER",
-            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
-              fileName: "app/routes/_index.tsx",
-              lineNumber: 236,
-              columnNumber: 92
-            }, this),
-            "ENCOUNTERED IN",
-            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
-              fileName: "app/routes/_index.tsx",
-              lineNumber: 236,
-              columnNumber: 112
+              columnNumber: 102
             }, this),
             "MY LIFE."
           ] }, void 0, true, {
@@ -1169,4 +1165,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-YDD3UN7K.js.map
+//# sourceMappingURL=/build/routes/_index-YFEX5K33.js.map

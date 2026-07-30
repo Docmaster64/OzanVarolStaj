@@ -821,21 +821,21 @@ img {
 }
 .speaking-quote {
   position: absolute;
-  max-width: 280px;
+  max-width: 500px;
   background: rgba(255, 255, 255, .1);
   backdrop-filter: blur(10px);
   padding: 12px;
-  border-radius: 12px;
+  border-radius: 24px;
   border: 2px solid var(--color-orange);
   pointer-events: auto;
 }
 .speaking-quote-top-left {
   top: 40px;
-  left: 40px;
+  left: 200px;
 }
 .speaking-quote-bottom-right {
   bottom: 40px;
-  right: 40px;
+  right: 120px;
 }
 .speaking-quote-text {
   font-size: 24px;

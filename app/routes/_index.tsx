@@ -310,7 +310,7 @@ export default function Index() {
         <div className="blog-container">
           <div className="blog-content">
             <a href="/blog" className="blog-label">recently on the blog:</a>
-            <a href="https://ozanvarol.com/a-trap-disguised-as-wisdom/" target="_blank" className="blog-title">A Trap Disguised as Wisdom</a>
+<a href="https://ozanvarol.com/a-trap-disguised-as-wisdom/" target="_blank" className="blog-title">A Trap Disguised<br />as Wisdom</a>
             <div className="blog-arrow">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 22.07">
                 <path d="M37.85 10.61 28 .19a.63.63 0 0 0-.87 0 .65.65 0 0 0 0 .87L36 10.42H.61a.61.61 0 0 0 0 1.22H36L27.14 21a.63.63 0 0 0 0 .87.62.62 0 0 0 .87 0l9.81-10.42a.66.66 0 0 0 0-.84Z" />

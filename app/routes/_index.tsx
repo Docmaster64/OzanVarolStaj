@@ -233,26 +233,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Audio Training Section */}
-      <section className="audio">
-        <div className="audio-container">
-          <div className="audio-image">
-            <img src="https://static.showit.co/800/3SWKdhu6TuW85ECqrEiGXg/shared/phone-earbuds.png" alt="Audio Training" className="audio-main" />
-            <img src="/ozan_audio_training_4_cropped.png" alt="Training" className="audio-overlay-1" />
-            <img src="https://static.showit.co/400/Zz4JnRI7TgO440xGw0eRbA/shared/podcastblank.png" alt="Podcast" className="audio-overlay-2" />
-            <img src="https://static.showit.co/file/ENoNJjXgQzmN5-5ugA_ClQ/260793/audio.gif" alt="Audio" className="audio-gif" />
-          </div>
-          <div className="audio-content">
-<h2 className="audio-title">Get A Free<br /><span className="audio-title-accent">Audio Training</span></h2>
-            <p className="audio-description">Learn 3 simple strategies to make giant leaps in your life and work.</p>
-            <form className="audio-form" id="hero-convertkit-form">
-              <input type="email" placeholder="Email Address" required />
-              <button type="submit" className="audio-btn">DOWNLOAD</button>
-            </form>
-          </div>
-        </div>
-      </section>
-
       {/* Book Section */}
       <section className="book">
         <div className="book-container">
@@ -319,6 +299,26 @@ export default function Index() {
           </div>
           <div className="blog-image">
             <img src="https://static.showit.co/800/pqeYF6WVQXyweWNacR2ZwA/260793/52175273144_209943c6ea_o.jpg" alt="Ozan Varol speaker" />
+          </div>
+        </div>
+      </section>
+
+      {/* Audio Training Section */}
+      <section className="audio">
+        <div className="audio-container">
+          <div className="audio-image">
+            <img src="https://static.showit.co/800/3SWKdhu6TuW85ECqrEiGXg/shared/phone-earbuds.png" alt="Audio Training" className="audio-main" />
+            <img src="/ozan_audio_training_4_cropped.png" alt="Training" className="audio-overlay-1" />
+            <img src="https://static.showit.co/400/Zz4JnRI7TgO440xGw0eRbA/shared/podcastblank.png" alt="Podcast" className="audio-overlay-2" />
+            <img src="https://static.showit.co/file/ENoNJjXgQzmN5-5ugA_ClQ/260793/audio.gif" alt="Audio" className="audio-gif" />
+          </div>
+          <div className="audio-content">
+<h2 className="audio-title">Get A Free<br /><span className="audio-title-accent">Audio Training</span></h2>
+            <p className="audio-description">Learn 3 simple strategies to make giant leaps in your life and work.</p>
+            <form className="audio-form" id="hero-convertkit-form">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit" className="audio-btn">DOWNLOAD</button>
+            </form>
           </div>
         </div>
       </section>

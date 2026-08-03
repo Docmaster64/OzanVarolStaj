@@ -25,7 +25,7 @@ import {
 var fonts_default = "/build/_assets/fonts-ECI55RS3.css";
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-D7XGAMSA.css";
+var global_default = "/build/_assets/global-7VBZUKXZ.css";
 
 // app/components/Navigation.tsx
 var import_react = __toESM(require_react(), 1);
@@ -48,7 +48,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\components\\Navigation.tsx"
   );
-  import.meta.hot.lastModified = "1785739878831.7947";
+  import.meta.hot.lastModified = "1785759900372.658";
 }
 function Navigation() {
   _s();
@@ -718,4 +718,4 @@ export {
   links,
   meta
 };
-//# sourceMappingURL=/build/root-Q6KB3OVA.js.map
+//# sourceMappingURL=/build/root-ZMBWOWIO.js.map

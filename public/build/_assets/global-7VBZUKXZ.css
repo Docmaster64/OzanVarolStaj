@@ -108,7 +108,7 @@ img {
   position: relative;
   z-index: 1000;
   background: var(--color-blue);
-  padding: 48px 0 15px;
+  padding: 48px 20px 15px;
 }
 .navbar:before {
   content: "";
@@ -126,8 +126,8 @@ img {
 }
 .nav-container {
   max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,7 +135,7 @@ img {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 .nav-right {
   display: flex;
@@ -156,11 +156,13 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav-spark {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 140px;
   z-index: 1002;
   display: inline-block;
   background: var(--color-orange);
@@ -287,6 +289,10 @@ img {
   padding: 11px 16px;
   gap: 10px;
   transition: background .3s ease, border-color .3s ease;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 .nav-toggle:hover {
   background: rgba(255, 255, 255, .1);
@@ -458,11 +464,11 @@ img {
   white-space: nowrap;
 }
 .hero-title .ozan {
-  color: var(--color-yellow);
+  color: #ff9d5f;
   display: block;
   text-align: left;
   position: relative;
-  left: 340px;
+  left: 20px;
   top: 110px;
   transform: translate(100vw);
   opacity: 0;
@@ -480,7 +486,7 @@ img {
   opacity: 0;
   transition: none;
   position: relative;
-  left: 80px;
+  left: -160px;
   z-index: 1;
 }
 .hero-title .varol.animate {
@@ -543,8 +549,8 @@ img {
   width: 560px !important;
   height: auto !important;
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, .3));
-  left: -260px;
-  top: 65px;
+  left: -190px;
+  top: 35px;
 }
 .press-logos-section {
   background: var(--color-white);
@@ -680,7 +686,7 @@ img {
 .quote-section {
   position: relative;
   padding: 120px 20px;
-  overflow: hidden;
+  overflow: visible;
   z-index: 1;
 }
 .quote-bg-top {
@@ -688,13 +694,13 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  height: 50%;
+  height: 30%;
   background: var(--color-orange);
   z-index: 0;
 }
 .quote-bg-bottom {
   position: absolute;
-  bottom: 0;
+  top: 10%;
   left: 0;
   right: 0;
   height: 50%;
@@ -706,6 +712,7 @@ img {
   z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
+  top: -256px;
   display: flex;
   flex-direction: row;
   align-items: center;

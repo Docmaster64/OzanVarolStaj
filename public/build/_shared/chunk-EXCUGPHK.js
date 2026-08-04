@@ -27,7 +27,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\components\\PageHeader.tsx"
   );
-  import.meta.hot.lastModified = "1785739878831.7947";
+  import.meta.hot.lastModified = "1785832089902.1228";
 }
 function PageHeader({
   title,
@@ -63,4 +63,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   PageHeader
 };
-//# sourceMappingURL=/build/_shared/chunk-GW3L74T5.js.map
+//# sourceMappingURL=/build/_shared/chunk-EXCUGPHK.js.map

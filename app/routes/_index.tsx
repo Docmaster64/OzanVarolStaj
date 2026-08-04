@@ -120,6 +120,55 @@ export default function Index() {
     script.setAttribute("data-uid", "9ae9a39668");
     script.src = "https://outatime-llc.ck.page/9ae9a39668/index.js";
     container.appendChild(script);
+
+    // Apply inline styles to make input + button side-by-side after form loads
+    const applyFormStyles = () => {
+      const form = container.querySelector(".formkit-form") as HTMLElement | null;
+      if (!form) return;
+
+      const fields = form.querySelector(".formkit-fields") as HTMLElement | null;
+      const field = form.querySelector(".formkit-field") as HTMLElement | null;
+      const input = form.querySelector(".formkit-input") as HTMLElement | null;
+      const submit = form.querySelector(".formkit-submit") as HTMLElement | null;
+
+      if (fields) {
+        fields.style.display = "flex";
+        fields.style.flexDirection = "row";
+        fields.style.alignItems = "center";
+        fields.style.gap = "10px";
+        fields.style.width = "100%";
+        fields.style.flexWrap = "nowrap";
+      }
+      if (field) {
+        field.style.flex = "1 1 auto";
+        field.style.minWidth = "0";
+        field.style.margin = "0";
+      }
+      if (input) {
+        input.style.width = "100%";
+        input.style.minWidth = "0";
+      }
+      if (submit) {
+        submit.style.flex = "0 0 auto";
+        submit.style.whiteSpace = "nowrap";
+        submit.style.margin = "0";
+      }
+    };
+
+    // Observe for the form to be injected by the ConvertKit script
+    const observer = new MutationObserver(() => {
+      applyFormStyles();
+      if (container.querySelector(".formkit-form")) {
+        observer.disconnect();
+      }
+    });
+    observer.observe(container, { childList: true, subtree: true });
+
+    // Also try after a short delay in case the form loads synchronously
+    setTimeout(applyFormStyles, 500);
+    setTimeout(applyFormStyles, 1500);
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -129,7 +178,7 @@ export default function Index() {
         <div className="hero-container">
           <div className="hero-content">
             <h2 className="hero-sub">The One Newsletter<br />You'll <span className="actually">Actually</span> Love</h2>
-            <p className="hero-join"><b>Join 50K+ readers who call it "<span className="highlight-underline">the email highlight of my week.</span>"</b></p>
+            <p className="hero-join" style={{ textAlign: 'right' }}><b>Join 50K+ readers who call it "<span className="highlight-underline">the email highlight of my week.</span>"</b></p>
             <p className="hero-tag">Takes 3 minutes to read. Takes longer to shake.</p>
             <div className="hero-form" id="hero-convertkit-form"></div>
           </div>

@@ -8,7 +8,7 @@ import {
 } from "/build/_shared/chunk-HJKMAVZZ.js";
 import {
   PageHeader
-} from "/build/_shared/chunk-GW3L74T5.js";
+} from "/build/_shared/chunk-EXCUGPHK.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XGOTYLZ5.js";
@@ -353,4 +353,4 @@ export {
   Books as default,
   meta
 };
-//# sourceMappingURL=/build/routes/books-B7K6LBND.js.map
+//# sourceMappingURL=/build/routes/books-SNV7OCVS.js.map

@@ -21,28 +21,13 @@ export default function Navigation() {
             />
           </a>
           <ul className="nav-menu" id="navMenu">
+            <li><a href="/" className="nav-link">Home</a></li>
             <li><a href="/about" className="nav-link">About</a></li>
-            <li><a href="/books" className="nav-link">Books</a></li>
             <li><a href="/speaking" className="nav-link">Speaking</a></li>
-            <li className="nav-dropdown">
-              <a href="/courses" className="nav-link">Courses</a>
-              <div className="nav-dropdown-menu">
-                <a href="/masterclass" className="dropdown-card blue">
-                  <h4>THE AI ADVANTAGE</h4>
-                  <p>For individuals and businesses</p>
-                  <span className="desc">Learn how to master ChatGPT, reclaim 10 hours from your work week, and change your to-do list from a battleground to a playground.</span>
-                </a>
-                <a href="/moonshot" className="dropdown-card yellow">
-                  <h4>MOONSHOT THINKING</h4>
-                  <p>For businesses</p>
-                  <span className="desc">Moonshot Thinking is a system for reimagining the status quo—and building a future others can't yet see. I wrote the book on it—literally.</span>
-                </a>
-                <a href="/courses" className="dropdown-all">see all courses</a>
-              </div>
-            </li>
+            <li><a href="/experiences" className="nav-link">Experiences</a></li>
+            <li><a href="/books" className="nav-link">Books</a></li>
             <li><a href="/blog" className="nav-link">Blog</a></li>
             <li><a href="/contact" className="nav-link">Contact</a></li>
-            <li><a href="/experiences" className="nav-link">Experiences</a></li>
           </ul>
           <a href="/newsletter" className="nav-spark">YOUR WEEKLY SPARK</a>
           <button

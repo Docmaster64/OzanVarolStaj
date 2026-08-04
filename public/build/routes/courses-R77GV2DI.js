@@ -3,7 +3,7 @@ import {
 } from "/build/_shared/chunk-HJKMAVZZ.js";
 import {
   PageHeader
-} from "/build/_shared/chunk-GW3L74T5.js";
+} from "/build/_shared/chunk-EXCUGPHK.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XGOTYLZ5.js";
@@ -176,4 +176,4 @@ export {
   Courses as default,
   meta
 };
-//# sourceMappingURL=/build/routes/courses-T3KQXSQ3.js.map
+//# sourceMappingURL=/build/routes/courses-R77GV2DI.js.map

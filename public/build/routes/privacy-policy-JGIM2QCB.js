@@ -1,6 +1,6 @@
 import {
   PageHeader
-} from "/build/_shared/chunk-GW3L74T5.js";
+} from "/build/_shared/chunk-EXCUGPHK.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XGOTYLZ5.js";
@@ -223,4 +223,4 @@ export {
   PrivacyPolicy as default,
   meta
 };
-//# sourceMappingURL=/build/routes/privacy-policy-QM7VTDKB.js.map
+//# sourceMappingURL=/build/routes/privacy-policy-JGIM2QCB.js.map

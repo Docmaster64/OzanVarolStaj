@@ -3,7 +3,7 @@ import {
 } from "/build/_shared/chunk-HJKMAVZZ.js";
 import {
   PageHeader
-} from "/build/_shared/chunk-GW3L74T5.js";
+} from "/build/_shared/chunk-EXCUGPHK.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XGOTYLZ5.js";
@@ -35,7 +35,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\newsletter.tsx"
   );
-  import.meta.hot.lastModified = "1785739878840.5095";
+  import.meta.hot.lastModified = "1785832089903.632";
 }
 var meta = () => [{
   title: "Newsletter | Ozan Varol - The One Newsletter You'll Actually Love"
@@ -308,4 +308,4 @@ export {
   Newsletter as default,
   meta
 };
-//# sourceMappingURL=/build/routes/newsletter-MNZT6GYV.js.map
+//# sourceMappingURL=/build/routes/newsletter-JAYT2CVJ.js.map

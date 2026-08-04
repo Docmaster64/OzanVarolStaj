@@ -36,7 +36,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\_index.tsx"
   );
-  import.meta.hot.lastModified = "1785841378430.752";
+  import.meta.hot.lastModified = "1785849996338.2458";
 }
 var meta = () => [{
   title: "Home | #1 Bestselling Author, Keynote Speaker & Expert on Innovation & Creativity"
@@ -1286,4 +1286,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-UVZZ2NGD.js.map
+//# sourceMappingURL=/build/routes/_index-LR2KPRJ5.js.map

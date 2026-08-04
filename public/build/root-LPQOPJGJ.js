@@ -48,7 +48,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\components\\Navigation.tsx"
   );
-  import.meta.hot.lastModified = "1785828420655.1128";
+  import.meta.hot.lastModified = "1785849996338.2458";
 }
 function Navigation() {
   _s();
@@ -663,4 +663,4 @@ export {
   links,
   meta
 };
-//# sourceMappingURL=/build/root-IQZAOMAY.js.map
+//# sourceMappingURL=/build/root-LPQOPJGJ.js.map

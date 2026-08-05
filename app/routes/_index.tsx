@@ -363,7 +363,7 @@ export default function Index() {
           </div>
           <div className="audio-content">
 <h2 className="audio-title">Get A Free<br /><span className="audio-title-accent">Audio Training</span></h2>
-            <p className="audio-description">Learn 3 simple strategies to make giant leaps in your life and work.</p>
+            <p className="audio-description">Learn 3 simple strategies to make giant<br />leaps in your life and work.</p>
             <form className="audio-form" id="hero-convertkit-form">
               <input type="email" placeholder="Email Address" required />
               <button type="submit" className="audio-btn">DOWNLOAD</button>

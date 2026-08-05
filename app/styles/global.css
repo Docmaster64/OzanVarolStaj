@@ -465,13 +465,13 @@ img {
 /* Quote Section */
 .quote-section { position: relative; padding: 120px 20px; overflow: visible; z-index: 1; }
 .quote-bg-top { position: absolute; top: 0; left: 0; right: 0; height: 30%; background: var(--color-orange); z-index: 0; }
-.quote-bg-bottom { position: absolute; top: 10%; left: 0; right: 0; height: 50%; background: #b9c9b8; z-index: 0; }
-.quote-container { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; top: -256px; display: flex; flex-direction: row; align-items: center; }
+.quote-bg-bottom { position: absolute; top: 15%; left: 0; right: 0; height: calc(50% - 12px); background: #b9c9b8; z-index: 0; }
+.quote-container { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; top: -256px; display: flex; flex-direction: row; align-items: center; transform: translateX(-80px); }
 .quote-images { position: relative; flex-shrink: 0; z-index: 5; }
 .quote-image-original { position: relative; z-index: 5; transform: translateX(55px); }
-.quote-image-original img { width: 100%; height: auto; max-width: none; max-height: 700px; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.2)); display: block; transform: translateX(-4px); }
+.quote-image-original img { width: 100%; height: auto; max-width: none; max-height: 800px; display: block; transform: translateX(-4px); }
 .quote-image-yellow { position: absolute; inset: 0; background: #fcd97b; -webkit-mask-image: url('/image_2.png'); mask-image: url('/image_2.png'); -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; pointer-events: none; opacity: 1; z-index: 1; transform: translateX(43px); }
-.quote-card { position: relative; z-index: 1; background: var(--color-white); padding: 70px; padding-left: 220px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); margin-left: -210px; width: 770px; }
+.quote-card:not(.quote-card-copy) { position: relative; z-index: 1; background: var(--color-white); padding: 70px; padding-left: 220px; margin-left: -210px; width: 770px; transform: scale(1.05); transform-origin: left center; }
 .quote-text { font-size: clamp(32px, 4vw, 52px); color: var(--color-black); font-family: 'Canela Medium', Georgia, serif; line-height: 1.2; margin-bottom: 30px; }
 .quote-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--color-yellow); color: var(--color-black); font-family: var(--font-outer); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 18px 32px; border-radius: 50px; border: none; cursor: pointer; transition: all 0.3s ease; }
 .quote-btn:hover { background: #f5d77a; transform: translateY(-2px); }
@@ -480,28 +480,29 @@ img {
 /* Gray copy of the quote card, positioned lower-left */
 .quote-card-copy {
   position: absolute;
-  bottom: 120px;
-  left: 535px;
+  top: 140px;
+  right: -6px;
   z-index: 0;
   background: #b9c9b8;
   box-shadow: none;
-  opacity: 0.85;
   pointer-events: none;
+  transform: scaleX(2.00);
+  transform-origin: right center;
 }
 .quote-card-copy .quote-text { color: #b9c9b8; }
 .quote-card-copy .quote-btn { background: #b9c9b8; color: #b9c9b8; }
 .quote-card-copy .quote-btn:hover { background: #b9c9b8; transform: none; }
 
 /* Speaking Section (home) - empty spacer with fixed video background */
-.speaking { position: relative; padding: 0; min-height: 100vh; background: transparent; }
+.speaking { position: relative; padding: 0; min-height: 60vh; background: transparent; }
 .speaking-overlay { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
 .speaking-quote { position: absolute; max-width: 500px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 12px; border-radius: 24px; border: 2px solid var(--color-orange); pointer-events: auto; }
-.speaking-quote-top-left { top: 40px; left: 200px; }
+.speaking-quote-top-left { top: -310px; left: 200px; }
 .speaking-quote-bottom-right { bottom: 40px; right: 120px; }
 .speaking-quote-text { font-size: 24px; color: var(--color-white); line-height: 1.4; margin-bottom: 6px; font-family: 'Saira', 'Eurostile', 'Microgramma', sans-serif; font-weight: 800; font-stretch: 150%; text-transform: uppercase; letter-spacing: 0; transform: scaleY(0.8); transform-origin: left center; text-align: left; padding-left: 18px; }
 .speaking-quote-author { font-size: 12px; color: var(--color-white); font-weight: 700; font-style: normal; text-transform: uppercase; letter-spacing: 0.1em; text-align: right; padding-right: 6px; }
 .speaking-quote-icon { position: absolute; top: 0px; left: 2px; width: 56px; height: 56px; color: #ede0c8; opacity: 0.8; }
-.speaking-center-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 3; }
+.speaking-center-content { position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 3; }
 .speaking-center-title { font-size: clamp(54px, 10.5vw, 160px); color: var(--color-yellow); font-family: 'Canela Medium', Georgia, serif; line-height: 0.9; margin-bottom: 30px; letter-spacing: -0.02em; }
 .speaking-center-btn { display: inline-block; color: var(--color-black); font-size: 15px; font-weight: 700; font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; padding: 18px 50px; margin-top: 20px; background: var(--color-yellow); border-radius: 50px; text-decoration: none; transition: all 0.3s ease; pointer-events: auto; transform: scaleY(0.92); }
 .speaking-center-btn:hover { background: #f5d77a; transform: translateY(-2px) scaleY(0.92); }
@@ -715,22 +716,25 @@ img {
 /* Audio Section */
 .audio { background: var(--color-orange); padding: 100px 20px; position: relative; z-index: 1; }
 .audio-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-.audio-content { transform: translateX(-30px); }
+.audio-content { transform: translateX(-65px); }
 .audio-image { position: relative; display: flex; justify-content: center; align-items: center; }
 .audio-main { max-height: 650px; width: auto; }
 .audio-overlay-1, .audio-overlay-2, .audio-gif { position: absolute; max-height: 340px; width: auto; }
 .audio-overlay-1 { top: 60px; right: 140px; z-index: 3; max-height: 270px; }
 .audio-overlay-2 { top: 80px; right: 140px; left: auto; z-index: 2; max-height: 420px; }
-.audio-gif { top: -40px; right: -620px; max-height: 420px; }
-.audio-title { font-family: 'Canela Medium', Georgia, serif; font-size: clamp(36px, 4.5vw, 64px); line-height: 1.05; margin-bottom: 24px; color: var(--color-white); font-weight: 400; }
+.audio-gif { top: -90px; right: -590px; max-height: 420px; }
+.audio-title { font-family: 'Canela Medium', Georgia, serif; font-size: clamp(36px, 4.5vw, 64px); line-height: 1.05; margin-top: -110px; margin-bottom: 24px; color: var(--color-white); font-weight: 400; }
 /* .audio-title-accent { font-style: italic; } */
 .audio-waveform { display: flex; align-items: center; gap: 3px; margin-bottom: 24px; }
 .audio-waveform span { display: block; width: 3px; background: var(--color-black); border-radius: 999px; animation: audioWave 1.8s ease-in-out infinite; }
 .audio-waveform span:nth-child(odd) { height: 28px; animation-delay: 0s; }
 .audio-waveform span:nth-child(even) { height: 16px; animation-delay: 0.25s; }
 @keyframes audioWave { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(0.45); } }
-.audio-description { font-family: 'Grotesk', 'Made Outer Sans Regular', 'Neue Haas', sans-serif; font-size: clamp(15px, 1.6vw, 18px); line-height: 1.5; margin-bottom: 36px; color: var(--color-white); font-weight: 300; }
+.audio-description { font-family: 'Inter', sans-serif; font-size: 21px; line-height: 1.5; margin-bottom: 36px; color: var(--color-white); font-weight: 400; letter-spacing: 0; }
 .audio-form { display: flex; flex-direction: column; gap: 16px; max-width: 480px; width: 100%; }
+#hero-convertkit-form { flex-direction: row; align-items: center; gap: 10px; margin-top: 100px; }
+#hero-convertkit-form input[type="email"] { flex: 1; min-width: 0; border-radius: 8px; }
+#hero-convertkit-form .audio-btn { flex-shrink: 0; white-space: nowrap; border-radius: 8px; }
 .audio-form input[type="email"] { padding: 18px 20px; border: none; border-radius: 0; font-size: 16px; font-family: inherit; width: 100%; color: var(--color-black); }
 .audio-form .audio-btn { padding: 18px 20px; border: none; border-radius: 0; background: var(--color-yellow); color: var(--color-black); font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; cursor: pointer; transition: transform 0.2s ease, background 0.2s ease; }
 .audio-form .audio-btn:hover { background: #f5d77a; transform: translateY(-1px); }

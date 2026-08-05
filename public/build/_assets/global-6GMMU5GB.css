@@ -762,10 +762,10 @@ img {
 }
 .quote-bg-bottom {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 0;
   right: 0;
-  height: 50%;
+  height: calc(50% - 12px);
   background: #b9c9b8;
   z-index: 0;
 }
@@ -778,6 +778,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transform: translate(-80px);
 }
 .quote-images {
   position: relative;
@@ -793,8 +794,7 @@ img {
   width: 100%;
   height: auto;
   max-width: none;
-  max-height: 700px;
-  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, .2));
+  max-height: 800px;
   display: block;
   transform: translate(-4px);
 }
@@ -813,14 +813,15 @@ img {
   z-index: 1;
   transform: translate(43px);
 }
-.quote-card {
+.quote-card:not(.quote-card-copy) {
   position: relative;
   z-index: 1;
   background: var(--color-white);
   padding: 70px 70px 70px 220px;
-  box-shadow: 0 20px 60px #00000026;
   margin-left: -210px;
   width: 770px;
+  transform: scale(1.05);
+  transform-origin: left center;
 }
 .quote-text {
   font-size: clamp(32px, 4vw, 52px);
@@ -859,13 +860,14 @@ img {
 }
 .quote-card-copy {
   position: absolute;
-  bottom: 120px;
-  left: 535px;
+  top: 140px;
+  right: -6px;
   z-index: 0;
   background: #b9c9b8;
   box-shadow: none;
-  opacity: .85;
   pointer-events: none;
+  transform: scaleX(2);
+  transform-origin: right center;
 }
 .quote-card-copy .quote-text {
   color: #b9c9b8;
@@ -881,7 +883,7 @@ img {
 .speaking {
   position: relative;
   padding: 0;
-  min-height: 100vh;
+  min-height: 60vh;
   background: transparent;
 }
 .speaking-overlay {
@@ -901,7 +903,7 @@ img {
   pointer-events: auto;
 }
 .speaking-quote-top-left {
-  top: 40px;
+  top: -310px;
   left: 200px;
 }
 .speaking-quote-bottom-right {
@@ -948,7 +950,7 @@ img {
 }
 .speaking-center-content {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -1659,7 +1661,7 @@ img {
   align-items: center;
 }
 .audio-content {
-  transform: translate(-30px);
+  transform: translate(-65px);
 }
 .audio-image {
   position: relative;
@@ -1692,8 +1694,8 @@ img {
   max-height: 420px;
 }
 .audio-gif {
-  top: -40px;
-  right: -620px;
+  top: -90px;
+  right: -590px;
   max-height: 420px;
 }
 .audio-title {
@@ -1703,6 +1705,7 @@ img {
     serif;
   font-size: clamp(36px, 4.5vw, 64px);
   line-height: 1.05;
+  margin-top: -110px;
   margin-bottom: 24px;
   color: var(--color-white);
   font-weight: 400;
@@ -1737,16 +1740,13 @@ img {
   }
 }
 .audio-description {
-  font-family:
-    Grotesk,
-    Made Outer Sans Regular,
-    Neue Haas,
-    sans-serif;
-  font-size: clamp(15px, 1.6vw, 18px);
+  font-family: Inter, sans-serif;
+  font-size: 21px;
   line-height: 1.5;
   margin-bottom: 36px;
   color: var(--color-white);
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 .audio-form {
   display: flex;
@@ -1754,6 +1754,22 @@ img {
   gap: 16px;
   max-width: 480px;
   width: 100%;
+}
+#hero-convertkit-form {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 100px;
+}
+#hero-convertkit-form input[type=email] {
+  flex: 1;
+  min-width: 0;
+  border-radius: 8px;
+}
+#hero-convertkit-form .audio-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+  border-radius: 8px;
 }
 .audio-form input[type=email] {
   padding: 18px 20px;

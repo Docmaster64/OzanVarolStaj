@@ -36,7 +36,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\_index.tsx"
   );
-  import.meta.hot.lastModified = "1785849996338.2458";
+  import.meta.hot.lastModified = "1785918683534.4229";
 }
 var meta = () => [{
   title: "Home | #1 Bestselling Author, Keynote Speaker & Expert on Innovation & Creativity"
@@ -1033,7 +1033,15 @@ function Index() {
           lineNumber: 373,
           columnNumber: 1
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "audio-description", children: "Learn 3 simple strategies to make giant leaps in your life and work." }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "audio-description", children: [
+          "Learn 3 simple strategies to make giant",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+            fileName: "app/routes/_index.tsx",
+            lineNumber: 374,
+            columnNumber: 85
+          }, this),
+          "leaps in your life and work."
+        ] }, void 0, true, {
           fileName: "app/routes/_index.tsx",
           lineNumber: 374,
           columnNumber: 13
@@ -1286,4 +1294,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-LR2KPRJ5.js.map
+//# sourceMappingURL=/build/routes/_index-5CDTQ7OY.js.map

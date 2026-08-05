@@ -397,7 +397,7 @@ export default function Index() {
               <div className="testimonial-icon">
                 <QuoteIcon />
               </div>
-              <h3 className="testimonial-text">When the stakes are high, the unknowns are threatening, and the problems seem insurmountable, you need a superhero—which means you need Ozan Varol.</h3>
+              <h3 className="testimonial-text">When the stakes are high, the unknowns are<br />threatening, and the problems seem<br />insurmountable, you need a superhero—<br />which means you need Ozan Varol.</h3>
               <p className="testimonial-author">— DAN PINK</p>
               <p className="testimonial-title">New York Times–bestselling author of <i>Drive</i></p>
             </div>

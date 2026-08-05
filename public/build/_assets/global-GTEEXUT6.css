@@ -581,6 +581,9 @@ img {
   min-width: 0 !important;
   display: block !important;
 }
+#hero-convertkit-form .formkit-input {
+  margin-top: -2px !important;
+}
 #hero-convertkit-form .formkit-submit,
 .hero-form .formkit-submit {
   flex: 0 0 auto !important;
@@ -1151,8 +1154,33 @@ img {
 .testimonial-item.frame-blue .testimonial-image:after {
   border-color: var(--color-blue);
 }
+.testimonial-item.frame-blue .testimonial-image {
+  margin-left: 35px;
+  margin-top: 40px;
+}
 .testimonial-item.frame-yellow .testimonial-image:after {
   border-color: var(--color-yellow);
+}
+.testimonial-item.alt.frame-yellow .testimonial-image {
+  margin-left: 200px;
+}
+.testimonial-item.alt.frame-yellow .testimonial-text {
+  white-space: nowrap;
+  max-width: none;
+  line-height: 1.2;
+}
+.testimonial-item.alt.frame-yellow .testimonial-content {
+  margin-left: -65px;
+}
+.testimonial-item.alt.frame-yellow .testimonial-author {
+  margin-top: 30px;
+}
+.testimonial-item.alt.frame-yellow .testimonial-title {
+  margin-top: 5px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  letter-spacing: .15em;
 }
 .testimonial-item.frame-orange .testimonial-image:after {
   border-color: var(--color-orange);
@@ -1227,6 +1255,11 @@ img {
 .testimonial-item.alt.reverse .testimonial-text {
   white-space: nowrap;
   max-width: none;
+}
+.testimonial-item.alt.reverse .testimonial-text,
+.testimonial-item.alt.reverse .testimonial-author,
+.testimonial-item.alt.reverse .testimonial-title {
+  padding-left: 10px;
 }
 .testimonial-content {
   flex: 1;
@@ -1755,21 +1788,43 @@ img {
   max-width: 480px;
   width: 100%;
 }
+.seva-fields {
+  flex-direction: column !important;
+  flex-flow: column !important;
+  align-items: stretch !important;
+  gap: 10px !important;
+}
+#hero-convertkit-form .seva-fields {
+  flex-direction: column !important;
+  flex-flow: column !important;
+  align-items: stretch !important;
+}
+.seva-fields .formkit-field {
+  margin-bottom: 10px;
+}
+.seva-fields .formkit-submit {
+  align-self: stretch !important;
+}
+.seva-fields .formkit-submit button {
+  width: 100%;
+  text-align: center;
+}
 #hero-convertkit-form {
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   gap: 10px;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 #hero-convertkit-form input[type=email] {
-  flex: 1;
+  width: 100%;
   min-width: 0;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 #hero-convertkit-form .audio-btn {
-  flex-shrink: 0;
+  width: 100%;
   white-space: nowrap;
-  border-radius: 8px;
+  border-radius: 4px;
+  letter-spacing: 0;
 }
 .audio-form input[type=email] {
   padding: 18px 20px;

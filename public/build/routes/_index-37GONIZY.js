@@ -36,7 +36,7 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\_index.tsx"
   );
-  import.meta.hot.lastModified = "1785918683534.4229";
+  import.meta.hot.lastModified = "1785944204319.2366";
 }
 var meta = () => [{
   title: "Home | #1 Bestselling Author, Keynote Speaker & Expert on Innovation & Creativity"
@@ -1163,7 +1163,27 @@ function Index() {
             lineNumber: 405,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "testimonial-text", children: "When the stakes are high, the unknowns are threatening, and the problems seem insurmountable, you need a superhero\u2014which means you need Ozan Varol." }, void 0, false, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", { className: "testimonial-text", children: [
+            "When the stakes are high, the unknowns are",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 408,
+              columnNumber: 90
+            }, this),
+            "threatening, and the problems seem",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 408,
+              columnNumber: 130
+            }, this),
+            "insurmountable, you need a superhero\u2014",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, false, {
+              fileName: "app/routes/_index.tsx",
+              lineNumber: 408,
+              columnNumber: 173
+            }, this),
+            "which means you need Ozan Varol."
+          ] }, void 0, true, {
             fileName: "app/routes/_index.tsx",
             lineNumber: 408,
             columnNumber: 15
@@ -1294,4 +1314,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-5CDTQ7OY.js.map
+//# sourceMappingURL=/build/routes/_index-37GONIZY.js.map

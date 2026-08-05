@@ -325,7 +325,9 @@ ul { list-style: none; }
    ============================================================ */
 .testimonials { background: var(--color-white); padding: 100px 20px; }
 .testimonials-container { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-.testimonial-card { }
+.testimonial-card:first-child .t-text,
+.testimonial-card:first-child .t-author,
+.testimonial-card:first-child .t-role { padding-left: 40px; }
 .testimonial-card .quote-icon svg { width: 50px; height: 50px; fill: var(--color-blue); margin-bottom: 15px; }
 .testimonial-card:nth-child(2) .quote-icon svg { fill: var(--color-yellow); }
 .testimonial-card:nth-child(3) .quote-icon svg { fill: var(--color-orange); }

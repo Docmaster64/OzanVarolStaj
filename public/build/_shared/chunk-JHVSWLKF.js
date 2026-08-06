@@ -1,0 +1,1 @@
+import{c as s,e as t}from"/build/_shared/chunk-MFPRU5OA.js";var e=s(t(),1);function r({title:i,subtitle:a}){return(0,e.jsx)("section",{className:"page-header",children:(0,e.jsxs)("div",{className:"container",children:[(0,e.jsx)("h1",{className:"page-title",children:i}),a?(0,e.jsx)("p",{className:"page-subtitle",children:a}):null]})})}export{r as a};

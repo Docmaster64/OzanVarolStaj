@@ -410,7 +410,7 @@ export default function Index() {
         <div className="quote-banner-container">
           <div className="quote-banner-left">
             <h3 className="quote-banner-text">
-              If you looked up the word 'polymath' in the dictionary, you may see a picture of Ozan<br />Varol.
+              If you looked up the word 'polymath' in the<br />dictionary, you may see a picture of Ozan<br />Varol.
             </h3>
             <div className="quote-banner-author">
               <p className="quote-banner-name">— NIR EYAL</p>

@@ -1,0 +1,2174 @@
+
+> ozan-varol-clone@1.0.0 dev
+> remix dev
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+ 💿  remix dev
+
+[7m[33m warn [39m[27m Fetcher persistence behavior is changing in React Router v7
+[33m┃[39m [90mYou can use the `v3_fetcherPersist` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_fetcherPersist[39m
+[33m┗[39m
+[7m[33m warn [39m[27m Route discovery/manifest behavior is changing in React Router v7
+[33m┃[39m [90mYou can use the `v3_lazyRouteDiscovery` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_lazyRouteDiscovery[39m
+[33m┗[39m
+[7m[33m warn [39m[27m Relative routing behavior for splat routes is changing in React Router v7
+[33m┃[39m [90mYou can use the `v3_relativeSplatPath` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_relativeSplatPath[39m
+[33m┗[39m
+[7m[33m warn [39m[27m Data fetching is changing to a single fetch in React Router v7
+[33m┃[39m [90mYou can use the `v3_singleFetch` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_singleFetch[39m
+[33m┗[39m
+[7m[33m warn [39m[27m The format of errors thrown on aborted requests is changing in React Router v7
+[33m┃[39m [90mYou can use the `v3_throwAbortReason` future flag to opt-in early.[39m
+[33m┃[39m [90m-> https://remix.run/docs/en/2.13.1/start/future-flags#v3_throwAbortReason[39m
+[33m┗[39m
+[7m[34m info [39m[27m building...
+[7m[34m info [39m[27m built[90m (929ms)[39m
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018005792.2385:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018005792.2385:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018005792.2385:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 48.011 ms
+GET / 200 - - 14.348 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 69.514 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (362ms)[39m
+[7m[34m info [39m[27m app server ready[90m (643ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018241097.025:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018241097.025:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018241097.025:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 49.194 ms
+GET / 200 - - 13.265 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 62.308 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (218ms)[39m
+[7m[34m info [39m[27m app server ready[90m (398ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018332943.2427:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018332943.2427:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018332943.2427:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 45.852 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 71.041 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (230ms)[39m
+[7m[34m info [39m[27m app server ready[90m (502ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018405637.3818:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018405637.3818:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018405637.3818:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 51.540 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 58.559 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (194ms)[39m
+[7m[34m info [39m[27m app server ready[90m (481ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (210ms)[39m
+[7m[34m info [39m[27m app server ready[90m (519ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018602248.4895:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018602248.4895:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018602248.4895:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 63.244 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 70.673 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (188ms)[39m
+[7m[34m info [39m[27m app server ready[90m (627ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018978031.7642:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018978031.7642:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786018978031.7642:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 62.597 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 78.326 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (189ms)[39m
+[7m[34m info [39m[27m app server ready[90m (566ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (179ms)[39m
+[7m[34m info [39m[27m app server ready[90m (464ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (198ms)[39m
+[7m[34m info [39m[27m app server ready[90m (507ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (181ms)[39m
+[7m[34m info [39m[27m app server ready[90m (394ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019471473.5205:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019471473.5205:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019471473.5205:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 55.276 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 64.028 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (235ms)[39m
+[7m[34m info [39m[27m app server ready[90m (626ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (184ms)[39m
+[7m[34m info [39m[27m app server ready[90m (434ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019586656.1213:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019586656.1213:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019586656.1213:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 59.380 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 71.364 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (244ms)[39m
+[7m[34m info [39m[27m app server ready[90m (570ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (199ms)[39m
+[7m[34m info [39m[27m app server ready[90m (400ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (252ms)[39m
+[7m[34m info [39m[27m app server ready[90m (471ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (195ms)[39m
+[7m[34m info [39m[27m app server ready[90m (422ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019870483.8171:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019870483.8171:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786019870483.8171:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 65.817 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 59.803 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (217ms)[39m
+[7m[34m info [39m[27m app server ready[90m (579ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (197ms)[39m
+[7m[34m info [39m[27m app server ready[90m (406ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786020031216.838:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786020031216.838:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786020031216.838:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 69.617 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 69.249 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (195ms)[39m
+[7m[34m info [39m[27m app server ready[90m (458ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786020179396.038:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786020179396.038:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786020179396.038:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 48.628 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 70.058 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (175ms)[39m
+[7m[34m info [39m[27m app server ready[90m (534ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (216ms)[39m
+[7m[34m info [39m[27m app server ready[90m (587ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (823ms)[39m
+[7m[34m info [39m[27m app server ready[90m (680ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023200284.3662:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023200284.3662:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023200284.3662:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 49.221 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 62.226 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (225ms)[39m
+[7m[34m info [39m[27m app server ready[90m (468ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (196ms)[39m
+[7m[34m info [39m[27m app server ready[90m (513ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023605343.5107:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023605343.5107:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023605343.5107:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 66.648 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 70.663 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (186ms)[39m
+[7m[34m info [39m[27m app server ready[90m (547ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (229ms)[39m
+[7m[34m info [39m[27m app server ready[90m (493ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023823277.3647:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023823277.3647:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786023823277.3647:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 47.988 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 56.770 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (201ms)[39m
+[7m[34m info [39m[27m app server ready[90m (538ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (241ms)[39m
+[7m[34m info [39m[27m app server ready[90m (479ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (229ms)[39m
+[7m[34m info [39m[27m app server ready[90m (451ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (203ms)[39m
+[7m[34m info [39m[27m app server ready[90m (615ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (206ms)[39m
+[7m[34m info [39m[27m app server ready[90m (527ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (218ms)[39m
+[7m[34m info [39m[27m app server ready[90m (520ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786024581124.2944:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786024581124.2944:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786024581124.2944:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 52.026 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 57.857 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (206ms)[39m
+[7m[34m info [39m[27m app server ready[90m (503ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786024674718.8994:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786024674718.8994:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786024674718.8994:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 55.276 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 65.264 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (208ms)[39m
+[7m[34m info [39m[27m app server ready[90m (549ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (189ms)[39m
+[7m[34m info [39m[27m app server ready[90m (542ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786025157221.5483:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786025157221.5483:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786025157221.5483:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 28.696 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (173ms)[39m
+[7m[34m info [39m[27m app server ready[90m (400ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (210ms)[39m
+[7m[34m info [39m[27m app server ready[90m (501ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786025405889.7505:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786025405889.7505:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786025405889.7505:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 55.195 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 67.401 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (198ms)[39m
+[7m[34m info [39m[27m app server ready[90m (703ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (222ms)[39m
+[7m[34m info [39m[27m app server ready[90m (498ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (215ms)[39m
+[7m[34m info [39m[27m app server ready[90m (490ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (256ms)[39m
+[7m[34m info [39m[27m app server ready[90m (485ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (196ms)[39m
+[7m[34m info [39m[27m app server ready[90m (438ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (193ms)[39m
+[7m[34m info [39m[27m app server ready[90m (553ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (214ms)[39m
+[7m[34m info [39m[27m app server ready[90m (532ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (195ms)[39m
+[7m[34m info [39m[27m app server ready[90m (540ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (188ms)[39m
+[7m[34m info [39m[27m app server ready[90m (559ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (203ms)[39m
+[7m[34m info [39m[27m app server ready[90m (492ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (187ms)[39m
+[7m[34m info [39m[27m app server ready[90m (443ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (193ms)[39m
+[7m[34m info [39m[27m app server ready[90m (499ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (201ms)[39m
+[7m[34m info [39m[27m app server ready[90m (463ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (215ms)[39m
+[7m[34m info [39m[27m app server ready[90m (548ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (194ms)[39m
+[7m[34m info [39m[27m app server ready[90m (595ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (187ms)[39m
+[7m[34m info [39m[27m app server ready[90m (525ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (202ms)[39m
+[7m[34m info [39m[27m app server ready[90m (495ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786027701438.9612:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786027701438.9612:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786027701438.9612:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 52.320 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 68.705 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (319ms)[39m
+[7m[34m info [39m[27m app server ready[90m (504ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (704ms)[39m
+[7m[34m info [39m[27m app server ready[90m (558ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (473ms)[39m
+[7m[34m info [39m[27m app server ready[90m (558ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (394ms)[39m
+[7m[34m info [39m[27m app server ready[90m (559ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (916ms)[39m
+[7m[34m info [39m[27m app server ready[90m (664ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (836ms)[39m
+[7m[34m info [39m[27m app server ready[90m (512ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (869ms)[39m
+Command failed with exit code 1: taskkill /F /PID 22692
+ERROR: The process with PID 22692 could not be terminated.
+Reason: Yap�lmak istenen i�lem desteklenmiyor.
+[7m[34m info [39m[27m app server ready[90m (666ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (815ms)[39m
+[7m[34m info [39m[27m app server ready[90m (687ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (1.1s)[39m
+[7m[34m info [39m[27m app server ready[90m (715ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (752ms)[39m
+[7m[34m info [39m[27m app server ready[90m (533ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (889ms)[39m
+[7m[34m info [39m[27m app server ready[90m (538ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (914ms)[39m
+[7m[34m info [39m[27m app server ready[90m (731ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (834ms)[39m
+[7m[34m info [39m[27m app server ready[90m (763ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786028805478.4497:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786028805478.4497:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786028805478.4497:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 50.740 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 62.739 ms
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (890ms)[39m
+[7m[34m info [39m[27m app server ready[90m (556ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (799ms)[39m
+[7m[34m info [39m[27m app server ready[90m (788ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (809ms)[39m
+[7m[34m info [39m[27m app server ready[90m (678ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (510ms)[39m
+[7m[34m info [39m[27m app server ready[90m (556ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (436ms)[39m
+[7m[34m info [39m[27m app server ready[90m (643ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (527ms)[39m
+[7m[34m info [39m[27m app server ready[90m (511ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (354ms)[39m
+[7m[34m info [39m[27m app server ready[90m (692ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (381ms)[39m
+[7m[34m info [39m[27m app server ready[90m (512ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+[7m[34m info [39m[27m rebuilding...[90m (~ app\styles\global.css)[39m
+[7m[34m info [39m[27m rebuilt[90m (362ms)[39m
+[7m[34m info [39m[27m app server ready[90m (512ms)[39m
+[7m[34m info [39m[27m hmr
+
+[remix-serve] http://localhost:3000 (http://192.168.1.100:3000)
+Warning: Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786029746813.103:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786029746813.103:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+Warning: Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+    at svg
+    at button
+    at div
+    at div
+    at section
+    at Index (file:///C:/Users/Efe/Desktop/Kod/OzanVarolStaj/build/index.js?t=1786029746813.103:3903:10)
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at Outlet (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1182:28)
+    at body
+    at html
+    at App
+    at RenderedRoute (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:535:7)
+    at RenderErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:482:7)
+    at DataRoutes (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:130:3)
+    at Router (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router\dist\umd\react-router.development.js:1203:17)
+    at StaticRouterProvider (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\react-router-dom\server.js:67:3)
+    at RemixErrorBoundary (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\errorBoundaries.js:41:5)
+    at RemixServer (C:\Users\Efe\Desktop\Kod\OzanVarolStaj\node_modules\@remix-run\react\dist\server.js:48:3)
+GET / 200 - - 55.630 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 58.840 ms
+GET / 200 - - 14.754 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 5.934 ms
+GET / 200 - - 10.625 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 8.547 ms
+GET / 200 - - 16.202 ms
+Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+    at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+    at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+    at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+    at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+    at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+No routes matched location "/.well-known/appspecific/com.chrome.devtools.json" 
+ErrorResponseImpl {
+  status: [33m404[39m,
+  statusText: [32m'Not Found'[39m,
+  internal: [33mtrue[39m,
+  data: [32m'Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"'[39m,
+  error: Error: No route matches URL "/.well-known/appspecific/com.chrome.devtools.json"
+      at getInternalRouterError [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:5581:5[90m)[39m
+      at Object.query [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\router[24m\router.ts:3565:19[90m)[39m
+      at handleDocumentRequest [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:327:35[90m)[39m
+      at requestHandler [90m(C:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\server-runtime[24m\dist\server.js:171:24[90m)[39m
+      at [90mC:\Users\Efe\Desktop\Kod\OzanVarolStaj\[39mnode_modules\[4m@remix-run\express[24m\dist\server.js:41:22
+}
+GET /.well-known/appspecific/com.chrome.devtools.json 404 - - 4.986 ms

@@ -1125,3 +1125,106 @@ img {
   .awakening-who .container { grid-template-columns: 1fr; }
   .awakening-question { font-size: 30px; }
 }
+
+/* ============================================================
+   BÜYÜK EKRAN (LARGE SCREEN) DÜZENLEMELERİ
+   Sadece geniş masaüstü/monitörlerde (>=1600px) devreye girer.
+   Normal ekranları (<1600px) HİÇ etkilemez.
+   ===*/
+@media (min-width: 1600px) {
+  :root { --max-width: 1920px; }
+
+  /* 1) TAM EKRAN HİSSİ (RESPONSIVE):
+     Konteynırlar sabit genişlik yerine vw cinsinden ölçeklenir,
+     böylece her geniş ekranda içerik yayılır ve kenarlarda ~2vw
+     boşluk kalır. */
+  .hero-container, .press-container, .speaking-container,
+  .testimonials-container, .quote-container, .blog-container,
+  .book-container, .footer-container, .footer-main,
+  .about-hero-container, .speaking-hero-container,
+  .book-detail-container, .featured-post-container,
+  .contact-container, .experience-hero-container,
+  .newsletter-hero-container, .overlay-inner {
+    max-width: clamp(1320px, calc(100% - 4vw), 2400px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 2) ABOUT: normalde sağa yapışıktı; geniş ekranda ortala.
+     Offset'ler vw cinsinden ölçeklenir. */
+  .about-container { margin: 0 auto; padding: 0 2.4vw; transform: translateX(clamp(40px, 3.9vw, 170px)); }
+  .about-content { transform: translateX(clamp(30px, 3.5vw, 150px)); }
+
+  /* QUOTE bölümü: kart + fotoğrafı birlikte sağa al (vw ile ölçeklenir). */
+  .quote-container { transform: translateX(clamp(180px, 21vw, 940px)); }
+
+  /* Gri kopya kartı (quote-card-copy): absolute olduğu için normalde sağda.
+     Büyük ekranda sola, ekran ortasına taşı. */
+  .quote-card-copy { right: auto; left: 34%; top: 130px; bottom: auto; }
+
+  /* KEYNOTE SPEAKING başlığını aşağı al (vh ile responsive). */
+  .speaking-center-title { margin-top: 32vh; }
+
+  /* BOOK bölümünü aşağı al (vh ile responsive). */
+  .book { margin-top: 14vh; }
+
+  /* Kitap bölümünü sağa taşı (her iki kolonu da birlikte). */
+  .book-container { transform: none; }
+
+  /* Sadece kitap görselini baya sağa taşı. */
+  .book-image-col { transform: translateX(clamp(40px, 14vw, 500px)); }
+
+  /* Kitap içerik kısmını biraz sağa taşı. */
+  .book-content-col { transform: translateX(clamp(20px, 4vw, 160px)); }
+
+  /* Soldaki alıntı kutusunu sağ aşağı taşı (responsive %/vh). */
+  .speaking-quote-top-left { top: -3%; left: 28%; }
+
+  /* Sağdaki alıntı kutusunu sağ alta, ortadan hafif sağına taşı (responsive). */
+  .speaking-quote-bottom-right { top: auto; left: auto; bottom: 20%; right: 27%; }
+
+  /* 2b) PRESS LOGOLARI: ortada birbirine yakın, boşluk ve boyut vw ile ölçeklenir. */
+  .press-logos { justify-content: center; gap: clamp(16px, 1.1vw, 42px); flex-wrap: nowrap; margin: 0 auto; }
+  .press-logo { opacity: 0.9; }
+  .press-logo img { height: clamp(30px, 1.64vw, 56px); }
+
+  /* 3) HERO: Kompozisyon ekran ortasında ve vw cinsinden ölçeklenir. */
+  .hero { justify-content: center; min-height: calc(52vh - 60px); }
+  .hero-container {
+    max-width: clamp(1200px, 55vw, 1800px);
+    margin: 0 auto;
+    padding-left: clamp(20px, 1.6vw, 64px);
+    transform: translateX(clamp(40px, 4.3vw, 180px));
+  }
+  .hero-title { left: 0; }
+  .hero-right { justify-content: center; min-height: calc(52vh - 60px); }
+  .hero-image { justify-content: center; min-height: calc(52vh - 60px); }
+  .hero-image img { left: clamp(40px, 7vw, 290px); }
+
+  /* 4) NAVBAR: Linkler normalde logo ile sağ kenar arasında (flex:1)
+     ortalandığı için büyük ekranda sağa kaymış görünüyor. Geniş ekranda
+     menüyü gerçek ekran ortasına sabitle. */
+  .nav-menu {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex: none;
+    width: max-content;
+    margin: 0;
+  }
+}
+
+/* ------------------------------------------------------------
+   YATAY TAŞMA DÜZELTMESİ (her ekranda)
+   Sağda 'sonsuz' beyaz sütun oluşmasının sebebi yatay taşmadır
+   (bazı bölümler geniş ekranda viewport'un sağına taşıyor).
+   Html+body seviyesi overflow-x hidden ile bu tamamen kesilir.
+   ------------------------------------------------------------ */
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
